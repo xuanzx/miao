@@ -45,9 +45,12 @@
       color: pink;
     }
 
-    [href^="mailto:"],
-    [href^="MAILTO:"] {
+    [href^="mailto: i"] {
       color: blue;
+    }
+
+    [href^="mailto."] {
+      color: black;
     }
 
     [href^="tel:"] {
@@ -63,7 +66,7 @@
       color: red;
     }
 
-    div.b>ul>li:nth-child(n):nth-last-child(n + 75) {
+    div.b>ul>li:nth-child(n):nth-last-child(n + 76) {
       color: red;
     }
 
@@ -71,12 +74,12 @@
       color: green;
     }
 
-    div.b>ul>li:nth-child(n + 35):nth-last-child(n + 50) {
+    div.b>ul>li:nth-child(n + 35):nth-last-child(n + 51) {
       color: blue;
     }
 
     div.prime>ul>li:nth-child(n + 2) {
-      color: red;
+      color: blue;
     }
 
 
@@ -84,7 +87,7 @@
     div.prime>ul>li:nth-child(3n + 9),
     div.prime>ul>li:nth-child(5n + 25),
     div.prime>ul>li:nth-child(7n + 49) {
-      color: green;
+      color: orange;
     }
   </style>
 </head>
