@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+    }
+
+    div {
+      height: 100%;
+      display: flex;
+      flex-flow: column wrap;
+    }
+
+    aside {
+      width: 50px;
+      height: 100%;
+      overflow: auto;
+      background-color: rgb(154, 168, 131);
+    }
+
+    div :last-child {
+      background-color: rgb(120, 161, 194);
+    }
+
+    header {
+      height: 50px;
+      width: calc(100% - 150px);
+      overflow: auto;
+      background-color: rgb(103, 81, 145);
+
+    }
+
+    main {
+      flex-grow: 1;
+      height: 0;
+      width: calc(100% - 150px);
+      overflow: auto;
+      background-color: rgb(218, 158, 176);
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <aside>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex saepe quos commodi magnam! Suscipit autem, harum
+      iusto? Voluptates minima aspernatur ipsum, ipsam modi consequuntur cum ducimus dolores deserunt laudantium,
+      blanditiis?</aside>
+    <header>header</header>
+    <main>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, quae at vero ex assumenda libero et. Velit
+      quos excepturi sunt nesciunt in recusandae ipsam assumenda, quisquam quam, illum voluptates ad!Lorem ipsum dolor
+      sit amet, consectetur adipisicing elit. Est quisquam iure veniam saepe ducimus eligendi alias modi dolore
+      molestias ipsam itaque corporis commodi sapiente porro quam suscipit ab, tempora, deserunt.</main>
+    <aside>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit explicabo quo dolorum dolores
+      architecto obcaecati quidem maxime debitis suscipit. Unde laudantium sit accusantium molestiae, quos mollitia
+      laborum adipisci iste corporis.</aside>
+    <aside>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi exercitationem et minus doloribus, odio
+      laudantium corporis atque earum possimus saepe optio consequuntur totam dolores corrupti. Excepturi sed quis vitae
+      dolorem?</aside>
+  </div>
+</body>
+
+</html>
