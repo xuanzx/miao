@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>居中</title>
+</head>
+<style>
+  h3 {
+    text-align: center;
+  }
+
+  /* 绝对定位和transform */
+  .a1 {
+    position: relative;
+    margin: 0 auto;
+    height: 150px;
+    width: 150px;
+    background-color: gray;
+  }
+
+  .b1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+    transform: translate(-50%, -50%);
+
+  }
+
+  .a2 {
+    position: relative;
+    margin: 0 auto;
+    height: 150px;
+    width: 150px;
+    background-color: rgb(216, 149, 149);
+  }
+
+  .b2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(220, 243, 183);
+    margin-left: -50px;
+    margin-top: -50px;
+
+  }
+
+  .a3 {
+    position: relative;
+    margin: 0 auto;
+    height: 150px;
+    width: 150px;
+    background-color: rgb(123, 129, 219);
+  }
+
+  .b3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    background-color: #FFF;
+  }
+
+  .a4 {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    background-color: rgb(173, 106, 236);
+  }
+
+  .b4 {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(208, 192, 218);
+  }
+
+  .a5 {
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    background-color: rgb(233, 218, 89);
+  }
+
+  .b5 {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(184, 207, 157);
+  }
+
+  .a6 {
+    margin: 0 auto;
+    display: grid;
+    height: 150px;
+    width: 150px;
+    background-color: rgb(235, 77, 14);
+  }
+
+  .b6 {
+    justify-self: center;
+    align-self: center;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(143, 88, 138);
+  }
+
+
+  .a7 {
+    display: table;
+    margin: 0 auto;
+    height: 150px;
+    width: 150px;
+    background-color: rgb(81, 163, 230);
+  }
+
+  .p7 {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: rgb(8, 46, 82);
+    font-size: 30px;
+    font-weight: 700;
+
+  }
+
+  .p8 {
+    margin: 0 auto;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    line-height: 150px;
+    background-color: #ff6700;
+    color: black;
+    font-size: 30px;
+    font-weight: 700;
+  }
+</style>
+
+
+<body>
+  <h3>方法1.绝对定位和transform</h3>
+  <div class="a1">
+    <section class="b1"></section>
+  </div>
+  <h3>方法2.定位元素top,left50%后margin减去自身宽高一半</h3>
+  <div class="a2">
+    <section class="b2"></section>
+  </div>
+  <h3>方法3.绝对定位元素margin为auto</h3>
+  <div class="a3">
+    <section class="b3"></section>
+  </div>
+  <h3>方法4.利用flex</h3>
+  <div class="a4">
+    <section class="b4"></section>
+  </div>
+  <h3>方法5.利用grid设置父元素</h3>
+  <div class="a5">
+    <section class="b5"></section>
+  </div>
+  <h3>方法6.利用grid设置子元素</h3>
+  <div class="a6">
+    <section class="b6"></section>
+  </div>
+  <h3>方法7.表单居中</h3>
+  <div class="a7">
+    <p class="p7">一期一会</p>
+  </div>
+  <h3>方法8.文本居中</h3>
+  <p class="p8">blue sky</p>
+  </div>
+
+</body>
+
+</html>
