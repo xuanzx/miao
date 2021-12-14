@@ -1,6 +1,6 @@
 <script type=XXX id='ch0103/01'>
   var a = Number(prompt("please input a number", ""))
-  var b = Number(prompt("please input aonther number", ""))
+  var b = Number(prompt("please input another number", ""))
   console.log("the answer is", a + b)
 </script>
 
@@ -18,9 +18,21 @@
   console.log("the answer is", (a + b) / c)
 </script>
 
-<script id='ch0103/04'>
+<script type=XXX id='ch0103/04'>
   var a = Number(prompt("please input a number", ""))
-  var b = Number(prompt("please input aonther number", ""))
-  console.log("整数商为",)
-  onsole.log("余数为",)
+  var b = Number(prompt("please input another number", ""))
+  console.log("整数商为", Math.floor(a / b))
+  console.log("余数为", a % b)
+</script>
+
+<script type=XXX id='ch0103/05'>
+  var a = Number(prompt("please input the number a", ""))
+  var b = Number(prompt("please input the number b", ""))
+  console.log("the answer is", (a / b).toFixed(9))
+</script>
+
+<script type=XXX id='ch0103/06'>
+  var a = Number(prompt("please input the number a", ""))
+  var b = Number(prompt("please input the number b", ""))
+  console.log("the answer is", (a / b).toFixed(5) * 100 + '%')
 </script>
