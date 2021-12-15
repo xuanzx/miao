@@ -394,3 +394,179 @@
   console.log(sum);
   console.log(average.toFixed(5));
 </script>
+
+<script type=XXX id="ch0105/05">
+  var num = prompt('请输入班级总人数');
+  var max = 0;
+  for (var i = 1; i <= num; i++) {
+    var score = prompt('请输入第' + i + '个学生成绩');
+    if (max < parseFloat(score)) {
+      max = parseFloat(score);
+    }
+    else {
+      continue
+    }
+  }
+  console.log(max);
+</script>
+
+<script type=XXX id="ch0105/06">
+  var n = prompt('请输入序列个数');
+  var max = 0;
+  var min = 0;
+  for (var i = 1; i <= n; i++) {
+    var score = prompt('请输入第' + i + '个数');
+    while (max < parseFloat(score)) {
+      max = parseFloat(score);
+    }
+    do {
+      min = parseFloat(score);
+    } while (min > parseFloat(score));
+    continue
+  }
+  diff = max - min
+  console.log(diff);
+</script>
+
+<script type=XXX id="ch0105/07">
+  var days = prompt('请输入参与决赛天数')
+  var sumgold = 0
+  var sumsilver = 0
+  var sumbronze = 0
+  for (var i = 1; i <= days; i++) {
+    var gold = prompt('请输入第' + i + '天金牌数')
+    var silver = prompt('请输入第' + i + '天银牌数')
+    var bronze = prompt('请输入第' + i + '天铜牌数')
+    sumgold = sumgold + parseFloat(gold)
+    sumsilver = sumsilver + parseFloat(silver)
+    sumbronze = sumbronze + parseFloat(bronze)
+  }
+  sum = sumgold + sumsilver + sumbronze
+  console.log(sumgold)
+  console.log(sumsilver)
+  console.log(sumbronze)
+  console.log(sum)
+</script>
+
+<script type=XXX id="ch0105/09">
+  var m = prompt('请输入整数m')
+  var n = prompt('请输入整数n')
+  var sum = 0;
+  for (var i = parseFloat(m); i <= parseFloat(n); i++) {
+    if (i % 2 == 1) {
+      sum = sum + i
+    }
+    else {
+      continue
+    }
+  }
+  console.log(sum);
+</script>
+
+<script type=XXX id="ch0105/10">
+  var m = prompt('请输入整数m')
+  var n = prompt('请输入整数n')
+  var sum = 0;
+  for (var i = parseFloat(m); i <= parseFloat(n); i++) {
+    if (i % 17 == 0) {
+      sum = sum + i
+    }
+    else {
+      continue
+    }
+  }
+  console.log(sum);
+</script>
+
+<script type=XXX id="ch0105/11">
+  var k = prompt('请输入正整数k')
+  var sum1 = 0
+  var sum5 = 0
+  var sum10 = 0
+  for (var i = 1; i <= k; i++) {
+    var num = prompt('请输入第' + i + '个正整数')
+    if (parseFloat(num) == 1) {
+      sum1++
+    } else if (parseFloat(num) == 5) {
+      sum5++
+    } else if (parseFloat(num) == 10) {
+      sum10++
+    } else {
+      continue
+    }
+  }
+  console.log(sum1)
+  console.log(sum5)
+  console.log(sum10)
+</script>
+
+<script type=XXX id="ch0105/12">
+  var N = prompt('请输入N')
+  var m = prompt('请输入指定数字m')
+  var sum = 0
+  for (var i = 1; i <= N; i++) {
+    var num = prompt('请输入第' + i + '个正整数')
+    if (parseFloat(num) == m) {
+      sum++
+    } else {
+      continue
+    }
+  }
+  console.log(sum)
+</script>
+
+<script type=XXX id="ch0105/13">
+  var a = Number(prompt('请输入整数a'))
+  var n = Number(prompt('请输入整数n'))
+  var power = 1
+  for (var i = 1; i <= n; i++) {
+    power = power * a
+  }
+  console.log(power)
+</script>
+
+<script type=XXX id="ch0105/14">
+  var x = Number(prompt('请输入人口基数x'))
+  var n = Number(prompt('请输入年数n'))
+  var population = 1
+  for (var i = 1; i <= n; i++) {
+    population = 1.01 * x
+  }
+  console.log(population.toFixed(4))
+</script>
+
+<script type=XXX id="ch0105/15">
+  var R = Number(prompt('请输入复合年利率R'))
+  var M = Number(prompt('请输入钱数M'))
+  var Y = Number(prompt('请输入投资年份Y'))
+  var money = 1
+  for (var i = 1; i <= Y; i++) {
+    money = ((R / 100) + 1) ** i * M
+  }
+  console.log(parseInt(money))
+</script>
+
+<script type=XXX id="ch0105/16">
+  var N = Number(prompt('请输入年薪N万'))
+  var K = Number(prompt('请输入房价增长率K'))
+  var M = 0
+  for (var i = 1; i <= 20; i++) {
+      M = (((K / 100) + 1) ** i * 200) / (M * i)
+  }
+  if (M) {
+  }
+  console.log(parseInt(M))
+</script>
+
+<script id="ch0105/17">
+  var k = Number(prompt('请输入正整数k'))
+  var num = 0
+  var n1 = 1
+  var n2 = 1
+  for (var i = 2; i < k; i++) {
+    num = n1 + n2
+    n1 = n2
+    n2 = num
+  }
+  console.log(num);
+</script>
