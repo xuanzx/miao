@@ -166,7 +166,7 @@
   }
 </script>
 
-<script id="ch0104/04">
+<script type=XXX id="ch0104/04">
   var A = Number(prompt("please input A"))
   var n = 'A'.charCodeAt(0)
   if (n % 2 == 1) {
@@ -273,7 +273,12 @@
 </script>
 
 <script type=XXX id="ch0104/14">
+  var x = Number(prompt("please input x"))
+  var a = prompt("please input y or n")
+  var price = 0
+  if (a = y) { price ==price + 5
 
+  }
 </script>
 
 <script type=XXX id="ch0104/15">
@@ -292,10 +297,13 @@
   var x = prompt("please input x")
   var y = prompt("please input y")
   var z = prompt("please input z")
-  if ((x + y > z) && (x + z > y) && (z + y > x))
-    alert("yes")
-  else
-    alert("no")
+  var t = ((x + y > z) && (x + z > y) && (z + y > x)) &&
+    ((x - y < z) && (x - z < y) && (z - y < x))
+  if (t == true) {
+    console.log("yes")
+  } else {
+    console.log("no")
+  }
 </script>
 
 <script type=XXX id="ch0104/17">
@@ -315,20 +323,21 @@
     alert("no")
 </script>
 
+
 <script type=XXX id="ch0104/20">
-  var x = prompt("please input a")
-  var y = prompt("please input b")
-  var z = prompt("please input c")
-  x1 = (-b + sqrt(b * b - 4 * a * c)) / (2 * a).toFixed(5)
-  x2 = (-b - sqrt(b * b - 4 * a * c)) / (2 * a).toFixed(5)
-  i1 = (-b / (2 * a) + sqrt(4 * a * c - b * b) / (2 * a)).toFixed(5)
-  i2 = (-b / (2 * a) - sqrt(4 * a * c - b * b) / (2 * a)).toFixed(5)
+  var a = prompt("please input a")
+  var b = prompt("please input b")
+  var c = prompt("please input c")
+  x1 = (-b + Math.sqrt(b * b - 4 * a * c)) / (2 * a).toFixed(5)
+  x2 = (-b - Math.sqrt(b * b - 4 * a * c)) / (2 * a).toFixed(5)
+  i1 = (-b / (2 * a) + Math.sqrt(4 * a * c - b * b) / (2 * a)).toFixed(5)
+  i2 = (-b / (2 * a) - Math.sqrt(4 * a * c - b * b) / (2 * a)).toFixed(5)
   if (b ** 2 == 4 * a * c)
-    alert("x1=x2=", x1)
+    console.log("x1=x2=", x1)
   else if (b ** 2 > 4 * a * c)
-    alert("x1=", x1, "x2=", x2)
-  else (b ** 2 < 4 * a * c)
-  alert("x1=", i1, "x2=", i2)
+    console.log("x1=", x1, "x2=", x2)
+  else if (b ** 2 < 4 * a * c)
+    console.log("x1=", i1, "x2=", i2)
 </script>
 
 <script type=XXX id="ch0104/21">
@@ -336,4 +345,21 @@
   var x = prompt("please input x")
   var y = prompt("please input y")
   alert(n - Math.ceil(y / x));
+</script>
+
+<script id="ch0105/01">
+  var num = prompt('请输入班级总人数:');
+  var sum = 0;
+  var average = 0;
+  for (var i = 1; i <= num; i++) {
+    var age = prompt('请输入第' + i + '个学生年龄');
+    sum = sum + parseFloat(age);
+  }
+  average = sum / num;
+  console.log(average.toFixed(2));
+</script>
+
+<script id="ch0105/02">
+
+
 </script>
