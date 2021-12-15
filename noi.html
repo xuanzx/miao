@@ -347,7 +347,7 @@
   alert(n - Math.ceil(y / x));
 </script>
 
-<script id="ch0105/01">
+<script type=XXX id="ch0105/01">
   var num = prompt('请输入班级总人数:');
   var sum = 0;
   var average = 0;
@@ -359,7 +359,38 @@
   console.log(average.toFixed(2));
 </script>
 
-<script id="ch0105/02">
+<script type=XXX id="ch0105/02">
+  var sum = 0;
+  var average = 0;
+  for (var i = 1; i <= 12; i++) {
+    var balance = prompt('请输入第' + i + '个月月末结余');
+    sum = sum + parseFloat(balance);
+  }
+  average = sum / 12;
+  console.log('$' + average.toFixed(2));
+</script>
 
+<script type=XXX id="ch0105/03">
+  var n = prompt('请输入样本容量:');
+  var sum = 0;
+  var average = 0;
+  for (var i = 1; i <= n; i++) {
+    var num = prompt('请输入第' + i + '个数');
+    sum = sum + parseFloat(num);
+  }
+  average = sum / n;
+  console.log(average.toFixed(4));
+</script>
 
+<script type=XXX id="ch0105/04">
+  var n = prompt('请输入整数数量:');
+  var sum = 0;
+  var average = 0;
+  for (var i = 1; i <= n; i++) {
+    var num = prompt('请输入第' + i + '个数');
+    sum = sum + parseFloat(num);
+  }
+  average = sum / n;
+  console.log(sum);
+  console.log(average.toFixed(5));
 </script>
