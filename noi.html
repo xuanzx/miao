@@ -462,22 +462,34 @@
   console.log(max);
 </script>
 
-<script type=XXX id="ch0105/06">
-  var n = prompt('请输入序列个数');
-  var max = 0;
-  var min = 0;
+<script type=XXX>
+  var n = prompt('请输入序列个数')
+  var max = 0
+  var min = 0
   for (var i = 1; i <= n; i++) {
-    var score = prompt('请输入第' + i + '个数');
+    var score = prompt('请输入第' + i + '个数')
     while (max < parseFloat(score)) {
-      max = parseFloat(score);
+      max = parseFloat(score)
     }
     do {
       min = parseFloat(score);
-    } while (min > parseFloat(score));
+    } while (min > parseFloat(score))
     continue
   }
   diff = max - min
-  console.log(diff);
+  console.log(diff)
+</script>
+
+<script type=XXX id='ch0105/06'>
+  var n = prompt('请输入非负整数个数n')
+  var max = 0
+  var min = 0
+  for (var i = 0; i < n; i++) {
+    var m = prompt('请输入非负整数m')
+    max = m > max ? m : max
+    min = m < min ? m : min
+  }
+  console.log(max - min)
 </script>
 
 <script type=XXX id="ch0105/07">
@@ -703,17 +715,51 @@
   console.log('End');
 </script>
 
-<script id="ch0105/21">
+<script type=XXX id='ch0105/21'>
+  var n = Number(prompt('n'))
+  var x
+  while (n != 1) {
+    if (n % 2 == 1) {
+      x = n * 3 + 1
+      console.log('' + n + '*' + '3' + '+' + '1' + '=' + x)
+    } else {
+      x = n / 2
+      console.log('' + n + '/' + '2' + '=' + x)
+    }
+    n = x
+  }
+  console.log('End')
+</script>
+
+
+<script type=XXX id='ch0105/22'>
+  var sum = 0
+  var count =0
+  var x = 0
+  var save = 0
+  for (var i = 1 ; i < 12; i++) {
+    var n = Number(prompt('请输入预算n'))
+    count = 300 - n + x
+    if (count < 0 && s == 0) {
+      n = i + 1
+
+    }
+    save = 350 - n
+    sum = sum
+  }
+</script>
+
+<script type=XXX id="ch0105/23">
   var m = Number(prompt('请输入开始药品总量m'))
   var n = Number(prompt('取药人数n'))
   var sum = 0
-  var p = 0
+  var p
   for (var i = 1; i <= n; i++) {
     var num = Number(prompt('请输入第' + i + '个人希望取药数量num'))
     sum = sum + num
     N = m - sum
-    while (N <= 0) {
-      p = i
+    while (N < 0) {
+      p = i - 2
       break
     }
   }
