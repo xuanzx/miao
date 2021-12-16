@@ -768,7 +768,7 @@
 </script>
 
 
-<script id="ch0105/26">
+<script type=XXX id="ch0105/26">
   var n = Number(prompt('请输入四位数个数n'))
   var sum = 0
   var ge
@@ -789,4 +789,69 @@
     }
   }
   console.log(counter)
+</script>
+
+<script type=XXX id='ch0105/27'>
+  var k = Number(prompt('请输入整数k'))
+  var Sn = 1
+  var n = 1
+  while (Sn <= k) {
+    Sn = Sn + (1 / (1 + n))
+    n++
+  }
+  console.log(n)
+</script>
+
+<script type=XXX id='ch0105/28'>
+  var n = String(prompt('请输入整数n'))
+  var n1 = n - 0
+  var N = ''
+  for (var i = n.length; i > 0; i--) {
+    N = N + n1 % 10 + ' '
+    n1 = (n1 - n1 % 10) / 10
+  }
+  console.log(N)
+</script>
+
+<script type=XXX id='ch0105/29'>
+  var N = String(prompt('请输入整数N'))
+  var n1 = N - 0
+  var newN = ''
+  for (var i = N.length; i > 0; i--) {
+    if (n1 > 0) {
+      newN = newN + n1 % 10
+      n1 = n1 - n1 % 10
+      n1 = n1 / 10
+    } else {
+      if (n1 % 10 == 0) {
+        n1 = n1 / 10
+      }
+      newN = newN + n1 % 10 * (-1)
+      n1 = n1 - n1 % 10
+      n1 = n1 / 10
+      if (n1 == 0) {
+        newN *= -1
+        break
+      }
+    }
+  }
+  console.log(newN)
+</script>
+
+<script id='ch0105/30'>
+  var m = Number(prompt('请输入整数m'))
+  var k = Number(prompt('请输入整数k'))
+  var counter = 0
+  if (m % 19 == 0) {
+    while (m > 0) {
+      if (m % 10 == 3) {
+        counter++
+        if (counter > k) console.log('NO')
+      }
+      m = (m - m % 10) / 10
+    }
+    if (counter == k) console.log('YES')
+  } else {
+    console.log('NO')
+  }
 </script>
