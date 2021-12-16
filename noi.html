@@ -346,6 +346,17 @@
     alert("no")
 </script>
 
+<script type=XXX id='ch0104/19'>
+  var x = Number(prompt('x'))
+  var y = Number(prompt('y'))
+  var z = prompt('z')
+  if (y == 0) console.log('Divided by zero!')
+  else if (z != '+' && z != '-' && z != '*' && z != '/') console.log('Invalid operator!')
+  else if (z == '+') console.log(x + y)
+  else if (z == '-') console.log(x - y)
+  else if (z == '*') console.log(x * y)
+  else if (z == '/') console.log(x / y)
+</script>
 
 <script type=XXX>
   var a = prompt("please input a")
@@ -389,26 +400,26 @@
 </script>
 
 <script type=XXX id="ch0105/01">
-  var num = prompt('请输入班级总人数:');
-  var sum = 0;
-  var average = 0;
+  var num = Number(prompt('请输入班级总人数:'))
+  var sum = 0
+  var average = 0
   for (var i = 1; i <= num; i++) {
-    var age = prompt('请输入第' + i + '个学生年龄');
-    sum = sum + parseFloat(age);
+    var age = prompt('请输入第' + i + '个学生年龄')
+    sum = sum + parseFloat(age)
   }
   average = sum / num;
-  console.log(average.toFixed(2));
+  console.log(average.toFixed(2))
 </script>
 
 <script type=XXX id="ch0105/02">
-  var sum = 0;
-  var average = 0;
+  var sum = 0
+  var average = 0
   for (var i = 1; i <= 12; i++) {
-    var balance = prompt('请输入第' + i + '个月月末结余');
-    sum = sum + parseFloat(balance);
+    var balance = prompt('请输入第' + i + '个月月末结余')
+    sum = sum + parseFloat(balance)
   }
   average = sum / 12;
-  console.log('$' + average.toFixed(2));
+  console.log('$' + average.toFixed(2))
 </script>
 
 <script type=XXX id="ch0105/03">
@@ -587,7 +598,7 @@
   console.log(parseInt(money))
 </script>
 
-<script type=XXX id="ch0105/16">
+<script type=XXX>
   var N = Number(prompt('请输入年薪N万'))
   var K = Number(prompt('请输入房价增长率K'))
   var M = 0
@@ -597,6 +608,22 @@
   if (M) {
   }
   console.log(parseInt(M))
+</script>
+
+<script type=XXX id='ch0105/16'>
+  var N = Number(prompt('请输入年薪N万'))
+  var K = Number(prompt('请输入房价增长率K')) / 100
+  var sum = N
+  var price = 200
+  for (var i = 2; i < 20; i++) {
+    sum = sum + N
+    price = price * (1 + K)
+    if (sum - price > 0) {
+      console.log(i)
+      break
+    }
+  }
+  if (i == 20) console.log('Impossible')
 </script>
 
 <script type=XXX id="ch0105/17">
@@ -657,4 +684,39 @@
   }
   console.log(sum + h2)
   console.log(h2)
+</script>
+
+<script type=XXX id="ch0105/21">
+  var N = Number(prompt('请输入正整数N'))
+  var N2 = 0
+  for (var i = 1; i < N; i++) {
+    if (N % 2 == 1) {
+      N2 = N * 3 + 1
+      console.log(N2 = N, '* 3 + 1');
+      N = N2
+    } else if (N % 2 == 0) {
+      N2 = N / 2
+      console.log(N2 = N, '/ 2');
+      N = N2
+    }
+  }
+  console.log('End');
+</script>
+
+<script id="ch0105/21">
+  var m = Number(prompt('请输入开始药品总量m'))
+  var n = Number(prompt('取药人数n'))
+  var sum = 0
+  var p = 0
+  for (var i = 1; i <= n; i++) {
+    var num = Number(prompt('请输入第' + i + '个人希望取药数量num'))
+    sum = sum + num
+    N = m - sum
+    while (N <= 0) {
+      p = i
+      break
+    }
+  }
+  P = n - p
+  console.log(P)
 </script>
