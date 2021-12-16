@@ -766,3 +766,27 @@
   P = n - p
   console.log(P)
 </script>
+
+
+<script id="ch0105/26">
+  var n = Number(prompt('请输入四位数个数n'))
+  var sum = 0
+  var ge
+  var shi
+  var bai
+  var qian
+  counter = 0
+  for (var i = 1; i <= n; i++) {
+    var num = Number(prompt('请输入第' + i + '个四位数'))
+    ge = (num % 10)
+    shi = ((num % 100 - ge) / 10)
+    bai = ((num % 1000 - shi * 10 - ge) / 100)
+    qian = ((num - (bai * 100 + shi * 10 + ge)) / 1000)
+    if (ge - qian - bai - shi > 0) {
+      counter++
+    } else {
+      continue
+    }
+  }
+  console.log(counter)
+</script>
