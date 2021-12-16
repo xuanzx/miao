@@ -512,6 +512,17 @@
   console.log(sum)
 </script>
 
+<script type=XXX id='ch0105/08'>
+  var n = Number(prompt('请输入整数n'))
+  var total = (n - 2) * 180
+  var sum = 0
+  for (var i = 0; i < n - 1; i++) {
+    var d = Number(prompt('度数为'))
+    sum = sum + d
+  }
+  console.log(total - sum)
+</script>
+
 <script type=XXX id="ch0105/09">
   var m = prompt('请输入整数m')
   var n = prompt('请输入整数n')
@@ -592,12 +603,11 @@
 <script type=XXX id="ch0105/14">
   var x = Number(prompt('请输入人口基数x'))
   var n = Number(prompt('请输入年数n'))
-  var population = 1
   for (var i = 1; i <= n; i++) {
-    population = 1.01 * x
+    x = 1.001 * x
   }
-  console.log(population.toFixed(4))
-</script>
+  console.log(x.toFixed(4))
+
 
 <script type=XXX id="ch0105/15">
   var R = Number(prompt('请输入复合年利率R'))
@@ -810,7 +820,9 @@
     N = N + n1 % 10 + ' '
     n1 = (n1 - n1 % 10) / 10
   }
-  console.log(N)
+  console.log(Number(N))
+</script>
+
 </script>
 
 <script type=XXX id='ch0105/29'>
@@ -838,7 +850,7 @@
   console.log(newN)
 </script>
 
-<script id='ch0105/30'>
+<script type=XXX id='ch0105/30'>
   var m = Number(prompt('请输入整数m'))
   var k = Number(prompt('请输入整数k'))
   var counter = 0
