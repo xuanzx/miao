@@ -36,14 +36,14 @@
   console.log(((b / a) * 100).toFixed(3) + "%");
 </script>
 
-<script type=XXX id="ch0103/07">
-  var x = prompt("please input x")
-  var a = prompt("please input a")
-  var b = prompt("please input b")
-  var c = prompt("please input c")
-  var d = prompt("please input d")
-  console.log((a * x ** 3 + b * x ** 2 + c * x + d).toFixed(7));
-</script>
+<script type="xxx" id="ch0103/07">
+    let x = parseFloat(prompt("请输入x"))
+    let a = parseFloat(prompt("请输入a"))
+    let b = parseFloat(prompt("请输入b"))
+    let c = parseFloat(prompt("请输入c"))
+    let d = parseFloat(prompt("请输入d"))
+    console.log((a * x ** 3 + b * x ** 2 + c * x + d).toFixed(7))
+  </script>
 
 <script type=XXX id="ch0103/08">
   var F = prompt("Please input F")
@@ -118,13 +118,12 @@
   console.log((0.5 * L1 * L2).toFixed(2));
 </script>
 
-<script type=XXX id="ch0103/18">
-  var a1 = prompt("a1:")
-  var a2 = prompt("a2:")
-  var n = prompt("n:")
-  var menos = a2 - a1;
-  console.log(a1 + (n - 1) * menos)
-</script>
+<script type="xxx" id="ch0103/18">
+    let a1 = parseInt(prompt("请输入a1"))
+    let a2 = parseInt(prompt("请输入a2"))
+    let n = parseInt(prompt("请输入n"))
+    console.log(a1 + (n - 1) * (a2 - a1))
+  </script>
 
 <script type=XXX id="ch0103/19">
   var A = prompt("A:")
@@ -273,12 +272,23 @@
 </script>
 
 <script type=XXX id="ch0104/14">
-  var x = Number(prompt("please input x"))
-  var a = prompt("please input y or n")
-  var price = 0
-  if (a = y) { price ==price + 5
-
+  let num1 = parseInt(prompt("请输入num1"));
+  let str = prompt("请输人str");
+  let res;
+  if (num1 >= 1000) {
+    if (str === 'y') {
+      res = Math.ceil((num1 - 1000) / 500) * 4 + 8 + 5;
+    } else {
+      res = Math.ceil((num1 - 1000) / 500) * 4 + 8;
+    }
+  } else {
+    if (str === "y") {
+      res = 8 + 5;
+    } else {
+      res = 8;
+    }
   }
+  console.log(res);
 </script>
 
 <script type=XXX id="ch0104/15">
@@ -293,7 +303,7 @@
     alert(z)
 </script>
 
-<script type=XXX id="ch0104/16">
+<script type=XXX>
   var x = prompt("please input x")
   var y = prompt("please input y")
   var z = prompt("please input z")
@@ -304,6 +314,19 @@
   } else {
     console.log("no")
   }
+</script>
+<script type=xxx id="ch0104/16">
+  let num1 = parseInt(prompt("请输入num1"));
+  let num2 = parseInt(prompt("请输入num2"));
+  let num3 = parseInt(prompt("请输入num3"));
+  let sum = num1 + num2 + num3;
+  let res;
+  if ((sum - num1) > num1 && (sum - num2) > num2 && (sum - num3) > num3) {
+    res = "yes";
+  } else {
+    res = "no"
+  }
+  console.log(res);
 </script>
 
 <script type=XXX id="ch0104/17">
@@ -324,7 +347,7 @@
 </script>
 
 
-<script type=XXX id="ch0104/20">
+<script type=XXX>
   var a = prompt("please input a")
   var b = prompt("please input b")
   var c = prompt("please input c")
@@ -338,6 +361,24 @@
     console.log("x1=", x1, "x2=", x2)
   else if (b ** 2 < 4 * a * c)
     console.log("x1=", i1, "x2=", i2)
+</script>
+
+<script type=XXX id="ch0104/20">
+  let a = Number(prompt('输入a'));
+  let b = Number(prompt('输入b'));
+  let c = Number(prompt('输入c'));
+  if (b * b === (4 * a * c)) {
+    let x1 = x2 = (-b + Math.sqrt(b ** 2 - 4 * a * c)) / (2 * a);
+    console.log('x1' + '=' + x1.toFixed(5) + ';' + 'x2' + '=' + x2.toFixed(5));
+  } else if (b * b > (4 * a * c)) {
+    let x1 = (-b + Math.sqrt(b ** 2 - 4 * a * c)) / (2 * a);
+    let x2 = (-b - Math.sqrt(b ** 2 - 4 * a * c)) / (2 * a);
+    console.log('x1' + '=' + x1.Math.toFixed(5) + ';' + 'x2' + '=' + x2.toFixed(5));
+  } else {
+    let x1 = (-b / (2 * a)).toFixed(5) + '+' + String((Math.sqrt(4 * a * c - b * b) / (2 * a)).toFixed(5)) + 'i';
+    let x2 = (-b / (2 * a)).toFixed(5) + '-' + String((Math.sqrt(4 * a * c - b * b) / (2 * a)).toFixed(5)) + 'i';
+    console.log('x1' + '=' + x1 + ';' + 'x2' + '=' + x2);
+  }
 </script>
 
 <script type=XXX id="ch0104/21">
@@ -604,7 +645,7 @@
   }
 </script>
 
-<script id="ch0105/20">
+<script type=XXX id="ch0105/20">
   var h = Number(prompt('请输入球初始高度h'))
   var sum = 0
   for (var i = 1; i < 10; i++) {
