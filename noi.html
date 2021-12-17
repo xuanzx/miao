@@ -868,3 +868,79 @@
     console.log('NO')
   }
 </script>
+
+<script type=XXX id='ch0105/31'>
+  var N = Number(prompt('请输入整数N'))
+  var M = Number(prompt('请输入整数M'))
+  var off
+
+</script>
+
+<script type=XXX id='ch0105/32'>
+  var n = Number(prompt('请输入正整数n'))
+  var p = 1
+  var q = 2
+  var sum = 2
+  var m
+  var num
+  for (var i = 1; i < n; i++) {
+    m = p + q
+    num = m / q
+    sum = sum + num
+    p = q
+    q = m
+  }
+  console.log(sum.toFixed(4))
+
+</script>
+
+<script type=XXX id='ch0105/33'>
+  var n = Number(prompt('请输入正整数n'))
+  var N = 0
+  var num = 0
+  var sum = 0
+  for (var i = 1; i < n; i++) {
+    num = 1 / (i + 1)
+    if (i % 2 == 1) {
+      sum = sum + num
+    } else {
+      sum = sum - num
+    }
+  }
+  console.log(sum.toFixed(4))
+</script>
+
+<script type=XXX id='ch0105/34'>
+  var n = Number(prompt('请输入正整数n'))
+  var m = 1
+  var sum = 0
+  for (var i = 1; i <= n; i++) {
+    m = m * i
+    sum = sum + m
+  }
+  console.log(sum)
+</script>
+
+<script type=XXX id='ch0105/35'>
+  var n = Number(prompt('请输入正整数n'))
+  var m = 1
+  var s = 0
+  var sum = 1
+  for (var i = 1; i <= n; i++) {
+    m = m * i
+    s = 1 / m
+    sum = sum + s
+  }
+  console.log(sum.toFixed(10))
+</script>
+
+<script type=XXX id='ch0105/36'>
+  var n = Number(prompt('请输入n'))
+  var x = Number(prompt('请输入x'))
+  var sum = -1
+  for (var i = n; i >= 1; i--) {
+    x = x ** i
+    sum = sum + x
+  }
+  console.log(sum.toFixed(2))
+</script>
