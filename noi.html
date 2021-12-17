@@ -1144,3 +1144,19 @@ sqrt: 输入一个数，求它的平方根，精确到小数点后3位，不能�
 </body>
 
 </html>
+
+<script id='narcissistic'>
+  var a = 0, b = 0, c = 0;
+  var n = Number(prompt('请输入1000以内的整数'))
+  a = n % 10;
+  b = parseInt(((n / 10) % 10));
+  c = parseInt(n / 100);
+  if (n === a * a * a + b * b * b + c * c * c) {
+    console.log('YES')
+  } else {
+    console.log('NO')
+  }
+</script>
+</body>
+
+</html>
