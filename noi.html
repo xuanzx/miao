@@ -695,7 +695,7 @@
   }
 </script>
 
-<script type=XXX id="ch0105/20">
+<script id="ch0105/20">
   var h = Number(prompt('请输入球初始高度h'))
   var sum = 0
   for (var i = 1; i < 10; i++) {
@@ -705,7 +705,7 @@
     h2 = h1 / 2
     sum = sum + d
   }
-  console.log(sum + h2)
+  console.log(sum + h1)
   console.log(h2)
 </script>
 
@@ -1118,7 +1118,6 @@
 
 以下所有“是否”的题目都输出YES/NO
 
-narcissistics: 输出10000以内的水仙花数
 palindrom: 输入一个数，判断它数是否是回文数，如1223221
 weekday: 输入年份与月份，输出这个月的第一天是周几（视具体设定，周一可以用1或0表示）
 complete-number: 输入一个数，判断它是否是完全数（自行查相关概念）
@@ -1142,30 +1141,9 @@ sqrt: 输入一个数，求它的平方根，精确到小数点后3位，不能�
     console.log('NO')
   }
 </script>
-</body>
+
 
 <script type=XXX id='narcissistics'>
-  var a = 0, b = 0, c = 0, d = 0
-  for (var i = 100; i < 10000; i++) {
-    a = i % 10
-    b = parseInt(((i / 10) % 10))
-    c = parseInt(i / 100)
-    d = parseInt(i / 1000)
-    if (i < 1000) {
-      if (i === a * a * a + b * b * b + c * c * c) {
-        console.log(i)
-      }
-    }
-    else {
-      if (i === a * a * a * a + b * b * b * b + c * c * c * c) {
-        console.log(i)
-      }
-    }
-  }
-</script>
-
-
-<script id='narcissistics'>
   var a = 0, b = 0, c = 0
   for (var i = 100; i < 1000; i++) {
     a = i % 10
@@ -1174,5 +1152,26 @@ sqrt: 输入一个数，求它的平方根，精确到小数点后3位，不能�
     if (i === a * a * a + b * b * b + c * c * c) {
       console.log(i)
     }
+  }
+</script>
+
+
+
+<script type=XXX id='complete-number'>
+  var n = Number(prompt('请输入任意正整数'))
+  if (n = 2 ** 1 * (2 ** 2 - 1) ||
+    n = 2 ** ) {
+    console.log('YES')
+  } else {
+    console.log('NO')
+  }
+</script>
+
+<script type=XXX id='palindrom'>
+  var n = Number(prompt('请输入n'))
+  if (n < 0 || (n != 0 && n % 10 == 0)) {
+    console.log('NO')
+  } else if (0 <= n && n < 10) {
+    console.log('YES')
   }
 </script>
