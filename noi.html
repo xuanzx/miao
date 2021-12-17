@@ -944,3 +944,104 @@
   }
   console.log(sum.toFixed(2))
 </script>
+
+<script type=XXX id='ch0105/37'>
+  var M = Number(prompt('请输入M'))
+  var N = Number(prompt('请输入N'))
+  var X = Number(prompt('请输入X'))
+  var max = 0
+  var sum = -1
+  for (var i = n; i >= 1; i--) {
+    x = x ** i
+    sum = sum + x
+  }
+  console.log(max)
+</script>
+
+<script type=XXX id='ch0105/39'>
+  var n = Number(prompt('请输入n'))
+  var sum = 0
+  var num = 0
+  var sumOthers = 0
+  for (var i = 1; i <= n; i++) {
+    if ((i % 7 != 0) && (i % 10 != 7) && (i - i % 10 != 70)) {
+      num = i * i
+      sum = sum + num
+    }
+  }
+  console.log(sum)
+</script>
+
+<script type=XXX id='ch0105/40'>
+  var n = Number(prompt())
+  var count = 0
+  for (var i = 1; i <= n; i++) {
+    if (i % 10 == 1) {
+      count++
+    }
+    if (i % 100 - i % 10 == 10) {
+      count++
+    }
+    if (i % 1000 - i % 100 == 100) {
+      count++
+    }
+    if (i == 10000) {
+      count++
+    }
+  }
+  console.log(count)
+</script>
+
+<script type=XXX id='ch0105/41'>
+  var L = Number(prompt())
+  var R = Number(prompt())
+  var count = 0
+  for (var i = L; i <= R; i++) {
+    if (i % 10 == 2) {
+      count++
+    }
+    if (i % 100 - i % 10 == 20) {
+      count++
+    }
+    if (i % 1000 - i % 100 == 200) {
+      count++
+    }
+    if (i == 20000) {
+      count++
+    }
+  }
+  console.log(count)
+</script>
+
+<script type=XXX id='ch0105/42'>
+  var H = Number(prompt())
+  var W = Number(prompt())
+  var L = String(prompt())
+  var O = Number(prompt())
+  for (var i = 0; i < H; i++) {
+    var r = ''
+    for (var j = 0; j < W; j++) {
+      if (i == 0 || i == H - 1) {
+        r = r + L
+      } else if (j == 0 || j == W - 1) {
+        r = r + L
+      } else if (O == 1) {
+        r = r + L
+      } else r = r + ' '
+    }
+  }
+  console.log(r)
+
+</script>
+
+<script type=XXX id='ch0105/43'>
+  var n = Number(prompt())
+  var q = Math.ceil(Math.sqrt(n))
+  var p = 1
+  for (var i = 2; i < q; i++) {
+    if (n % i == 0) {
+      p = n / i
+      console.log(p);
+    }
+  }
+</script>
