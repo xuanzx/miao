@@ -709,7 +709,7 @@
   console.log(h2.toFixed(7))
 </script>
 
-<script id='ch0105/21'>
+<script type=XXX id='ch0105/21'>
   var n = Number(prompt('n'))
   var x
   while (n != 1) {
@@ -735,7 +735,6 @@
     count = 300 - n + x
     if (count < 0 && s == 0) {
       n = i + 1
-
     }
     save = 350 - n
     sum = sum
@@ -1082,6 +1081,22 @@
   }
 </script>
 
+<script type=XXX id='ch0105/44'>
+  var n = Number(prompt('n'))
+  var k
+  var m = 0
+  var sum = 0
+  for (var i = 1; i <= n; i++) {
+    m++
+    k = 0
+    for (var j = m; j > 0; j--) {
+      sum += m
+      if (i + k == n) console.log(sum)
+      k++
+    }
+  }
+</script>
+
 <script type=XXX id='ch0105/45'>
   var n = Number(prompt('n'))
   var k
@@ -1137,8 +1152,6 @@ sqrt: 输入一个数，求它的平方根，精确到小数点后3位，不能�
   }
 </script>
 
-
-
 <script type=XXX id='complete-number'>
   var n = Number(prompt('请输入任意正整数'))
   if (n = 2 ** 1 * (2 ** 2 - 1) ||
@@ -1155,5 +1168,16 @@ sqrt: 输入一个数，求它的平方根，精确到小数点后3位，不能�
     console.log('NO')
   } else if (0 <= n && n < 10) {
     console.log('YES')
+  }
+</script>
+
+<script id='sqrt'>
+  var n = Number(prompt('请输入n'))
+  for (i = 1; i < n; i++) {
+    if (i * i == n) {
+      console.log(i)
+    } else {
+
+    }
   }
 </script>
