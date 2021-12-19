@@ -1295,19 +1295,16 @@
   console.log(gys, gbs);
 </script>
 
-<script id="sqrt">
+<script id='sqrt'>
   var n = Number(prompt('请输入n'))
   var i = 1
   var N = n * 1000000
-  if (n >= 0) {
-    do {
-      i++
-    }
-    while (i ** 2 <= N) {
-      console.log((i - 1) / 1000)
-    }
+  do {
+    i++
   }
-
+  while (i ** 2 <= N) {
+    console.log((i - 1) / 1000)
+  }
 
 
 
