@@ -1034,24 +1034,6 @@
   console.log(Math.round(result))
   </script>
 
-<script type=XXX id="ch0105/38">
-
-  var group = Number(prompt('group'));
-  for (var i = 0; i < group; i++) {
-    var n = Number(prompt('n'));
-    var a = [];
-    for (var j = n; j >= 0; j--) {
-      var x = Number(prompt('x'));
-      a[j] = x * j;
-    }
-    var sum = String(a[n]);
-    for (var k = n - 1; k > 0; k--) {
-      sum = sum + ' ' + a[k];
-    }
-    console.log(sum);
-  }
-</script>
-
 <script type=XXX id='ch0105/39'>
   var n = Number(prompt('请输入n'))
   var sum = 0
@@ -1141,28 +1123,9 @@
   }
 </script>
 
-<script type=XXX id='ch0105/44'>
-  var n = Number(prompt('n'))
-  var count = 0
-  var l = 0
-  for (var i = 1; i < 10000; i++) {
-    for (var j = 1; j < i; j++) {
-      if (i % j == 0) {
-        l += 1
-      }
-    }
-    if (l == 2) {
-      count += 1
-      if (count == n) {
-        console.log(i)
-        break
-      }
-    }
-  }
-
 </script>
 
-<script id="ch0105/44">
+<script type=XXX id="ch0105/44">
   var n = Number(prompt('n'))
   var count = 0
   for (var i = 0; i < 10000; i++) {
