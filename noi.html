@@ -1213,7 +1213,12 @@
   var y = Number(prompt('请输入年份'))
   var m = Number(prompt('请输入月份'))
   var w = Math.trunc((1 + 2 * m + 3 * (m + 1) / 5 + y + y / 4 - y / 100 + y / 400) % 7)
-  console.log(w + 1)
+  if (m % 2 == 0) {
+    console.log(w + 1)
+  } else {
+    console.log(w)
+  }
+
 </script>
 
 
