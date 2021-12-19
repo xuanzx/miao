@@ -1209,7 +1209,7 @@
   }
 </script>
 
-<script id='weekday'>
+<script type=XXX id='weekday'>
   var y = Number(prompt('请输入年份'))
   var m = Number(prompt('请输入月份'))
   var w = Math.trunc((1 + 2 * m + 3 * (m + 1) / 5 + y + y / 4 - y / 100 + y / 400) % 7)
@@ -1220,8 +1220,6 @@
   }
 
 </script>
-
-
 
 <script type=XXX id='complete-number'>
   var sum = 0
@@ -1304,4 +1302,63 @@
   var gys = n % m
   var gbs = n * m / gys
   console.log(gys, gbs);
+</script>
+
+<script id="sqrt">
+  var n = Number(prompt('请输入正整数n'))
+  var i = 1
+  var N = n * 1000000
+  do {
+    i++
+  }
+  while (i ** 2 <= N) {
+    console.log(i / 1000)
+  }
+
+</script>
+
+<script type=XXX id='loopinga'>
+  var str = ''
+  for (var i = 1; i <= 7; i++) {
+    for (var j = 1; j <= i; j++) {
+      str += '#'
+    }
+    str += '\n'
+  }
+  console.log(str)
+</script>
+
+<script type=XXX id='fizzBuzz'>
+  for (var i = 1; i <= 100; i++) {
+    if (i % 3 == 0 && i % 5 != 0) {
+      console.log('Fizz')
+    }
+    if (i % 5 == 0 && i % 3 != 0) {
+      console.log('Buzz')
+    }
+    if (i % 5 == 0 && i % 3 == 0) {
+      console.log('FizzBuzz')
+    } else {
+      console.log(i)
+    }
+  }
+
+</script>
+
+<script type=XXX id='qipan'>
+  var str = ''
+  for (var i = 1; i <= 8; i++) {
+    for (var j = 1; j <= 8; j++) {
+      if (j % 2 == 1) {
+        str += '#'
+      } else {
+        str += ' '
+      }
+    }
+    str += '\n'
+    if (i % 2 == 1) {
+      str += '\b'
+    }
+  }
+  console.log(str)
 </script>
