@@ -725,20 +725,26 @@
   console.log('End')
 </script>
 
-<script type=XXX id='ch0105/22'>
-  var sum = 0
-  var count =0
-  var x = 0
-  var save = 0
-  for (var i = 1 ; i < 12; i++) {
-    var n = Number(prompt('请输入预算n'))
-    count = 300 - n + x
-    if (count < 0 && s == 0) {
-      n = i + 1
-    }
-    save = 350 - n
-    sum = sum
+<script id='ch0105/22'>
+  var arr = {}
+  for (var i = 0; i < 12; i++) {
+    arr[i] = prompt('请输入第' + (i + 1) + '个月预算 ')
   }
+  var x = 0
+  var y = 0
+  for (var i = 0; i < 12; i++) {
+    x += 300
+    x = x - arr[i]
+    if (x < 0) {
+      console.log(-(i + 1))
+      break
+    }
+    while (x >= 100) {
+      y += 100
+      x -= 100
+    }
+  }
+  console.log(y * 1.2 + x)
 </script>
 
 <script type=XXX id="ch0105/23">
@@ -1048,7 +1054,7 @@
   console.log(count)
 </script>
 
-<script id='ch0105/42'>
+<script type=XXX id='ch0105/42'>
   var H = Number(prompt())
   var W = Number(prompt())
   var L = String(prompt())
@@ -1084,17 +1090,19 @@
 
 <script type=XXX id='ch0105/44'>
   var n = Number(prompt('n'))
-  var k
-  var m = 0
-  var sum = 0
-  for (var i = 1; i <= n; i++) {
-    m++
-    k = 0
-    for (var j = m; j > 0; j--) {
-      sum += m
-      if (i + k == n) console.log(sum)
-      k++
+  var count = 0
+  for (var i = 1; i <= 10000; i++) {
+    for (var j = 2; j < i; j++) {
+      if (i % j == 0) {
+        break
+      } else {
+        count++
+        break
+      }
     }
+  }
+  while (count = n) {
+    console.log(i)
   }
 </script>
 
@@ -1113,18 +1121,6 @@
     }
   }
 </script>
-
-以下所有“是否”的题目都输出YES/NO
-
-palindrom: 输入一个数，判断它数是否是回文数，如1223221
-weekday: 输入年份与月份，输出这个月的第一天是周几（视具体设定，周一可以用1或0表示）
-complete-number: 输入一个数，判断它是否是完全数（自行查相关概念）
-complete-numbers: 输出1000以内的完全数
-prime: 输入一个数，判断它是否是素数
-primes: 输出1000以内的素数
-lcf&lcm: 输入两个数，输出它们的最大公约数和最小公倍数
-sqrt: 输入一个数，求它的平方根，精确到小数点后3位，不能使用Math.sqrt
-
 
 
 <script type=XXX id='narcissistic'>
