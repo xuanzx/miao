@@ -1006,7 +1006,7 @@
   console.log(sum.toFixed(2))
 </script>
 
-<script id='ch0105/37'>
+<script type=xxx id='ch0105/37'>
   var M = Number(prompt('请输入M'))
   var N = Number(prompt('请输入N'))
   var X = Number(prompt('请输入X'))
@@ -1032,16 +1032,24 @@
     result = Math.max(result, N)
   }
   console.log(Math.round(result))
+  </script>
 
-</script>
+<script type=XXX id="ch0105/38">
 
-while (X >= 0) {
-N = N + Math.floor(M / N)
-X = X - Math.ceil(M / N)
-result = Math.max(result, N)
-}
-console.log(Math.round(result))
-
+  var group = Number(prompt('group'));
+  for (var i = 0; i < group; i++) {
+    var n = Number(prompt('n'));
+    var a = [];
+    for (var j = n; j >= 0; j--) {
+      var x = Number(prompt('x'));
+      a[j] = x * j;
+    }
+    var sum = String(a[n]);
+    for (var k = n - 1; k > 0; k--) {
+      sum = sum + ' ' + a[k];
+    }
+    console.log(sum);
+  }
 </script>
 
 <script type=XXX id='ch0105/39'>
@@ -1136,19 +1144,42 @@ console.log(Math.round(result))
 <script type=XXX id='ch0105/44'>
   var n = Number(prompt('n'))
   var count = 0
-  for (var i = 1; i <= 10000; i++) {
-    for (var j = 2; j < i; j++) {
+  var l = 0
+  for (var i = 1; i < 10000; i++) {
+    for (var j = 1; j < i; j++) {
       if (i % j == 0) {
-        break
-      } else {
-        count++
+        l += 1
+      }
+    }
+    if (l == 2) {
+      count += 1
+      if (count == n) {
+        console.log(i)
         break
       }
     }
   }
-  while (count = n) {
-    console.log(i)
+
+</script>
+
+<script id="ch0105/44">
+  var n = Number(prompt('n'))
+  var count = 0
+  for (var i = 0; i < 10000; i++) {
+    for (var j = 0, N = 0; j <= i; j++) {
+      if ((i + 1) % (j + 1) == 0) {
+        N += 1
+      }
+    }
+    if (N == 2) {
+      count += 1
+      if (count == n) {
+        console.log(i + 1)
+        break
+      }
+    }
   }
+
 </script>
 
 <script type=XXX id='ch0105/45'>
