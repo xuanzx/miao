@@ -1210,17 +1210,6 @@
   }
 </script>
 
-<script type=XXX id='sqrt'>
-  var n = Number(prompt('请输入n'))
-  for (i = 1; i < n; i++) {
-    if (i * i == n) {
-      console.log(i)
-    } else {
-
-    }
-  }
-</script>
-
 <script type=XXX id='prime'>
   var n = Number(prompt('n'))
   for (var i = 0, N = 0; i < n; i++) {
@@ -1248,32 +1237,26 @@
   }
 </script>
 
-<script id='itob'>
+<script type=XXX id='itob'>
   var N = prompt('请输入整数N')
   console.log(N)
 </script>
 
+<script type=XXX id='sqrt'>
+  var n = Number(prompt('请输入n'))
+  for (i = 1; i < n; i++) {
+    if (i * i == n) {
+      console.log(i)
+    } else {
 
+    }
+  }
+</script>
 
-var n1 = N - 0
-var newN = ''
-for (var i = N.length; i > 0; i--) {
-if (n1 > 0) {
-newN = newN + n1 % 10
-n1 = n1 - n1 % 10
-n1 = n1 / 10
-} else {
-if (n1 % 10 == 0) {
-n1 = n1 / 10
-}
-newN = newN + n1 % 10 * (-1)
-n1 = n1 - n1 % 10
-n1 = n1 / 10
-if (n1 == 0) {
-newN *= -1
-break
-}
-}
-}
-console.log(newN)
+<script id='lcf&lcm'>
+  var n = Number(prompt('请输入n'))
+  var m = Number(prompt('请输入m'))
+  var gys = n % m
+  var gbs = n * m / gys
+  console.log(gys, gbs);
 </script>
