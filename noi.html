@@ -918,6 +918,7 @@
   var arr = [N + 1]
   var N = Number(prompt('N'))
   var M = Number(prompt('M'))
+  var str = ''
   for (var i = 0; i <= N; i++) {
     arr[i] = i
   }
@@ -930,12 +931,12 @@
   }
   for (var i = 1; i <= N; i++) {
     if (arr[i] < 0) {
-      console.log(-(arr[i]))
+      str += -arr[i] + ','
     }
   }
-
-
-
+  str = str.substring(0, str.lastIndexOf(','))
+  console.log(str)
+</script>
 
 </script>
 
