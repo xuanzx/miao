@@ -725,7 +725,7 @@
   console.log('End')
 </script>
 
-<script id='ch0105/22'>
+<script type=XXX id='ch0105/22'>
   var arr = {}
   for (var i = 0; i < 12; i++) {
     arr[i] = prompt('请输入第' + (i + 1) + '个月预算 ')
@@ -1006,17 +1006,42 @@
   console.log(sum.toFixed(2))
 </script>
 
-<script type=XXX id='ch0105/37'>
+<script id='ch0105/37'>
   var M = Number(prompt('请输入M'))
   var N = Number(prompt('请输入N'))
   var X = Number(prompt('请输入X'))
-  var max = 0
-  var sum = -1
-  for (var i = n; i >= 1; i--) {
-    x = x ** i
-    sum = sum + x
+  while (X > 0) {
+    N += Math.trunc(M / N)
+    X -= Math.ceil(M / N)
   }
-  console.log(max)
+  console.log(N)
+</script>
+
+<script type=xxx id="ch0105/37">
+
+  <script type=xxx id="ch0105/37">
+
+  var M = Number(prompt('M'))
+  var N = Number(prompt('N'))
+  var X = Number(prompt('X'))
+  var result = N
+
+  while (X >= 0) {
+    N = N + Math.floor(M / N)
+    X = X - Math.ceil(M / N)
+    result = Math.max(result, N)
+  }
+  console.log(Math.round(result))
+
+</script>
+
+while (X >= 0) {
+N = N + Math.floor(M / N)
+X = X - Math.ceil(M / N)
+result = Math.max(result, N)
+}
+console.log(Math.round(result))
+
 </script>
 
 <script type=XXX id='ch0105/39'>
