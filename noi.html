@@ -1296,15 +1296,20 @@
 </script>
 
 <script id="sqrt">
-  var n = Number(prompt('请输入正整数n'))
+  var n = Number(prompt('请输入n'))
   var i = 1
   var N = n * 1000000
-  do {
-    i++
+  if (n >= 0) {
+    do {
+      i++
+    }
+    while (i ** 2 <= N) {
+      console.log((i - 1) / 1000)
+    }
   }
-  while (i ** 2 <= N) {
-    console.log((i - 1) / 1000)
-  }
+
+
+
 
 </script>
 
