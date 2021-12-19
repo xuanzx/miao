@@ -1037,6 +1037,30 @@
   console.log(Math.round(result))
   </script>
 
+<script xtype="xx" id="ch0105/38">
+
+  var group = Number(prompt('group'))
+
+  for (; group > 0; group--) {
+    var n = Number(prompt('n'))
+    var result
+    if (n == 0) {
+      prompt('C')
+      result = 0
+    }
+    else {
+      for (var i = n; i >= 0; i--) {
+        var C = Number(prompt('C'))
+        if (i < n && i > 0)
+          result = result + " " + (i * C)
+        else if (i == n)
+          result = C * i
+      }
+    }
+    console.log(result)
+  }
+
+</script>
 
 <script type=XXX id='ch0105/39'>
   var n = Number(prompt('请输入n'))
@@ -1287,37 +1311,23 @@
   console.log(N)
 </script>
 
-<script type=XXX id='lcf&lcm'>
+<scrip type=XXX id='lcf&lcm'>
   var n = Number(prompt('请输入n'))
   var m = Number(prompt('请输入m'))
   var gys = n % m
   var gbs = n * m / gys
   console.log(gys, gbs);
-</script>
+  </script>
 
-<script type=XXX id='sqrt'>
-  var n = Number(prompt('请输入n'))
-  var i = 1
-  var N = n * 1000000
-  do {
-    i++
-  }
-  while (i ** 2 <= N) {
-    console.log((i - 1) / 1000)
-  }
 
-</script>
+  <script id='sqrt'>
+    var n = Number(prompt('请输入n'))
+    for (var i = (n + 1) / 2; i ** 2 > n; i = i - 0.001) {
+    }
+    console.log(i.toFixed(3))
+  </script>
 
-</script>
-<script id='sqrt'>
-  var n = Number(prompt('请输入n'))
-  for (var i = (n + 1) / 2; i ** 2 > n; i = i - 0.001) {
-  }
-  console.log(i.toFixed(3))
-
-</script>
-
-<script type=XXX id='loopinga'>
+  <script type=XXX id='loopinga'>
   var str = ''
   for (var i = 1; i <= 7; i++) {
     for (var j = 1; j <= i; j++) {
@@ -1328,7 +1338,7 @@
   console.log(str)
 </script>
 
-<script type=XXX id='fizzBuzz'>
+  <script type=XXX id='fizzBuzz'>
   for (var i = 1; i <= 100; i++) {
     if (i % 3 == 0 && i % 5 != 0) {
       console.log('Fizz')
@@ -1345,7 +1355,7 @@
 
 </script>
 
-<script type=XXX id='qipan'>
+  <script type=XXX id='qipan'>
   var str = ''
   for (var i = 1; i <= 8; i++) {
     for (var j = 1; j <= 8; j++) {
