@@ -1201,14 +1201,24 @@
   }
 </script>
 
-<script type=XXX id='palindrom'>
+<script id='palindrom'>
   var n = Number(prompt('请输入n'))
-  if (n < 0 || (n != 0 && n % 10 == 0)) {
-    console.log('NO')
-  } else if (0 <= n && n < 10) {
+  var a = String(n).length
+  var flag = true
+  for (i = 1, frist = 0, last = 0; i <= a / 2; i++) {
+    first = ((0.1 * n) ** i) % 10
+    last = ((0.1 * n) ** (a - i)) % 10
+    if (first != last) {
+      flag = false
+    }
+  }
+  if (flag = true) {
     console.log('YES')
+  } else {
+    console.log('NO')
   }
 </script>
+
 
 <script type=XXX id='prime'>
   var n = Number(prompt('n'))
@@ -1248,12 +1258,11 @@
     if (i * i == n) {
       console.log(i)
     } else {
-
     }
   }
 </script>
 
-<script id='lcf&lcm'>
+<script type=XXX id='lcf&lcm'>
   var n = Number(prompt('请输入n'))
   var m = Number(prompt('请输入m'))
   var gys = n % m
