@@ -1054,40 +1054,24 @@
     console.log(Math.round(result))
     </script>
 
-<script id='ch0105/38'>
-  var n = Number(prompt('请输入n'))
-  for (var i = 0, j = 0; i < n; i++) {
-    j = Number(prompt('请输入j'))
-    if (j == 0) {
-      console.log(j)
-    }
-    for (var k = 0, Cn = 0, f = k + 1; k < j + 1; k++) {
-      Cn = Number(prompt('请输入Cn'))
-      if (k != j) {
-        f -= 1
-        log(Cn * f)
-      }
-    }
-  }
-
-</script>
-
 <script type=xxx id="ch0105/38">
+  var m = Number(prompt())
 
-  var N = Number(prompt('N'))
-  for (var i1 = 0, n = 0; i1 < N; i1++){
-    n = Number(prompt('n'))
+  for (var i = 0; i < m; i++) {
+    var n = Number(prompt())
     if (n == 0) {
+      var c = Number(prompt())
       console.log(0)
-    }
-    for (var i2 = 0, cn = 0, a = n + 1; i2 < (n + 1); i2++){
-      cn = Number(prompt('cn'))
-      if (i2 != n){
-        a = a - 1
-        console.log(cn * a)
+    } else {
+      for (var j = n; j >= 0; j--) {
+        var c = Number(prompt())
+        if (j !== 0) {
+          console.log(c * j)
+        }
       }
     }
   }
+
 
 </script>
 
@@ -1123,7 +1107,7 @@
     }
   }
   console.log(count)
-</script>
+</>
 
 <script type=XXX id='ch0105/41'>
   var L = Number(prompt())
