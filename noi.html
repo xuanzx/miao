@@ -1037,6 +1037,59 @@
   console.log(Math.round(result))
   </script>
 
+<script type=xxx id="ch0105/37">
+
+    <script type=xxx id="ch0105/37">
+
+    var M = Number(prompt('M'))
+    var N = Number(prompt('N'))
+    var X = Number(prompt('X'))
+    var result = N
+
+    while (X >= 0) {
+      N = N + Math.floor(M / N)
+      X = X - Math.ceil(M / N)
+      result = Math.max(result, N)
+    }
+    console.log(Math.round(result))
+    </script>
+
+<script id='ch0105/38'>
+  var n = Number(prompt('请输入n'))
+  for (var i = 0, j = 0; i < n; i++) {
+    j = Number(prompt('请输入j'))
+    if (j == 0) {
+      console.log(j)
+    }
+    for (var k = 0, Cn = 0, f = k + 1; k < j + 1; k++) {
+      Cn = Number(prompt('请输入Cn'))
+      if (k != j) {
+        f -= 1
+        log(Cn * f)
+      }
+    }
+  }
+
+</script>
+
+<script type=xxx id="ch0105/38">
+
+  var N = Number(prompt('N'))
+  for (var i1 = 0, n = 0; i1 < N; i1++){
+    n = Number(prompt('n'))
+    if (n == 0) {
+      console.log(0)
+    }
+    for (var i2 = 0, cn = 0, a = n + 1; i2 < (n + 1); i2++){
+      cn = Number(prompt('cn'))
+      if (i2 != n){
+        a = a - 1
+        console.log(cn * a)
+      }
+    }
+  }
+
+</script>
 
 <script type=XXX id='ch0105/39'>
   var n = Number(prompt('请输入n'))
