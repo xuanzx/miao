@@ -275,6 +275,5 @@ var xuanzx = function () {
     sum: sum,
     repeat: repeat,
     range: range,
-    cloneDeep: cloneDeep,
   }
 }()
