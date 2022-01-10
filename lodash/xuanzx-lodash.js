@@ -293,6 +293,9 @@ var xuanzx = function () {
   function unionBy(array, size = 1) {
 
   }
+  function unionWith(array, size = 1) {
+
+  }
   function uniqWith(array, size = 1) {
 
   }
@@ -354,16 +357,40 @@ var xuanzx = function () {
   function find(array, size = 1) {
 
   }
+  function findLast(array, size = 1) {
+
+  }
+  function flatMap(array, size = 1) {
+
+  }
+  function flatMapDeep(array, size = 1) {
+
+  }
+  function flatMapDepth(array, size = 1) {
+
+  }
   function forEach(array, size = 1) {
 
   }
+  function forEachRight(array, size = 1) {
+
+  }
   function groupBy(array, size = 1) {
+
+  }
+  function includes(array, size = 1) {
+
+  }
+  function invokeMap(array, size = 1) {
 
   }
   function keyBy(array, size = 1) {
 
   }
   function map(array, size = 1) {
+
+  }
+  function orderBy(array, size = 1) {
 
   }
   function partition(array, size = 1) {
@@ -381,6 +408,9 @@ var xuanzx = function () {
   function sample(array, size = 1) {
 
   }
+  function sampleSize(array, size = 1) {
+
+  }
   function shuffle(array, size = 1) {
 
   }
@@ -390,19 +420,97 @@ var xuanzx = function () {
   function some(array, size = 1) {
 
   }
+  function sortBy(array, size = 1) {
+
+  }
+  function defer(array, size = 1) {
+
+  }
+  function delay(array, size = 1) {
+
+  }
+  function castArray(array, size = 1) {
+
+  }
+  function conformsTo(array, size = 1) {
+
+  }
+  function eq(array, size = 1) {
+
+  }
+  function gt(array, size = 1) {
+
+  }
+  function gte(array, size = 1) {
+
+  }
+  function isArguments(array, size = 1) {
+
+  }
+  function isArray(array, size = 1) {
+
+  }
+  function isArrayBuffer(array, size = 1) {
+
+  }
+
+  function isArrayLike(array, size = 1) {
+
+  }
+  function isArrayLikeObject(array, size = 1) {
+
+  }
   function isBoolean(array, size = 1) {
 
   }
+  function isBoolean(array, size = 1) {
+
+  }
+  function isDate(array, size = 1) {
+
+  }
+  function isElement(array, size = 1) {
+
+  }
+
   function isEmpty(array, size = 1) {
 
   }
   function isEqual(array, size = 1) {
 
   }
+  function isEqualWith(array, size = 1) {
+
+  }
+  function isError(array, size = 1) {
+
+  }
+  function isFunction(array, size = 1) {
+
+  }
+  function isInteger(array, size = 1) {
+
+  }
+  function isLength(array, size = 1) {
+
+  }
+  function isMap(array, size = 1) {
+
+  }
+  function isMatch(array, size = 1) {
+
+  }
+  function isMatchWith(array, size = 1) {
+
+  }
   function isNaN(array, size = 1) {
 
   }
+
   function isNil(array, size = 1) {
+
+  }
+  function isNative(array, size = 1) {
 
   }
   function isNull(array, size = 1) {
@@ -411,10 +519,82 @@ var xuanzx = function () {
   function isNumber(array, size = 1) {
 
   }
+  function isObject(array, size = 1) {
+
+  }
+  function isObjectLike(array, size = 1) {
+
+  }
+  function isPlainObject(array, size = 1) {
+
+  }
+
+  function isRegExp(array, size = 1) {
+
+  }
+  function isSafeInteger(array, size = 1) {
+
+  }
+  function isSet(array, size = 1) {
+
+  }
+  function isString(array, size = 1) {
+
+  }
+  function isSymbol(array, size = 1) {
+
+  }
+  function isTypedArray(array, size = 1) {
+
+  }
+  function isUndefined(array, size = 1) {
+
+  }
+  function isWeakMap(array, size = 1) {
+
+  }
+  function isWeakSet(array, size = 1) {
+
+  }
+  function lt(array, size = 1) {
+
+  }
+  function lte(array, size = 1) {
+
+  }
   function toArray(array, size = 1) {
 
   }
+  function toFinite(array, size = 1) {
+
+  }
+
+  function toInteger(array, size = 1) {
+
+  }
+  function toLength(array, size = 1) {
+
+  }
+  function toNumber(array, size = 1) {
+
+  }
+  function assign(array, size = 1) {
+
+  }
+  function toSafeInteger(array, size = 1) {
+
+  }
+  function add(array, size = 1) {
+
+  }
+
   function ceil(array, size = 1) {
+
+  }
+  function divide(array, size = 1) {
+
+  }
+  function floor(array, size = 1) {
 
   }
   function max(array, size = 1) {
@@ -423,6 +603,31 @@ var xuanzx = function () {
   function maxBy(array, size = 1) {
 
   }
+  function mean(array, size = 1) {
+
+  }
+  function meanBy(array, size = 1) {
+
+  }
+
+  function min(array, size = 1) {
+
+  }
+  function minBy(array, size = 1) {
+
+  }
+  function multiply(array, size = 1) {
+
+  }
+  function round(array, size = 1) {
+
+  }
+  function subtract(array, size = 1) {
+
+  }
+
+
+
   function sumBy(array, size = 1) {
 
   }
@@ -792,7 +997,7 @@ var xuanzx = function () {
     takeWhile: takeWhile,
     union: union,
     unionBy: unionBy,
-    uniqWith: uniqWith,
+    unionWith: unionWith,
     uniq: uniq,
     uniqBy: uniqBy,
     uniqWith: uniqWith,
@@ -810,29 +1015,93 @@ var xuanzx = function () {
     every: every,
     filter: filter,
     find: find,
+    findLast: findLast,
+    flatMap: flatMap,
+    flatMapDeep: flatMapDeep,
+    flatMapDepth: flatMapDepth,
     forEach: forEach,
+    forEachRight: forEachRight,
     groupBy: groupBy,
+    includes: includes,
+    invokeMap: invokeMap,
     keyBy: keyBy,
     map: map,
+    orderBy: orderBy,
     partition: partition,
     reduce: reduce,
     reduceRight: reduceRight,
     reject: reject,
     sample: sample,
+    sampleSize: sampleSize,
     shuffle: shuffle,
     size: size,
     some: some,
+    sortBy: sortBy,
+    defer: defer,
+    delay: delay,
+    castArray: castArray,
+    conformsTo: conformsTo,
+    eq: eq,
+    gt: gt,
+    gte: gte,
+    isArguments: isArguments,
+    isArray: isArray,
+    isArrayBuffer: isArrayBuffer,
+    isArrayLike: isArrayLike,
+    isArrayLikeObject: isArrayLikeObject,
     isBoolean: isBoolean,
+    isDate: isDate,
+    isElement: isElement,
     isEmpty: isEmpty,
     isEqual: isEqual,
+    isEqualWith: isEqualWith,
+    isError: isError,
+    isFinite: isFinite,
+    isFunction: isFunction,
+    isInteger: isInteger,
+    isLength: isLength,
+    isMap: isMap,
+    isMatch: isMatch,
+    isMatchWith: isMatchWith,
     isNaN: isNaN,
+    isNative: isNative,
     isNil: isNil,
     isNull: isNull,
     isNumber: isNumber,
+    isObject: isObject,
+    isObjectLike: isObjectLike,
+    isPlainObject: isPlainObject,
+    isRegExp: isRegExp,
+    isSafeInteger: isSafeInteger,
+    isSet: isSet,
+    isString: isString,
+    isSymbol: isSymbol,
+    isTypedArray: isTypedArray,
+    isUndefined: isUndefined,
+    isWeakMap: isWeakMap,
+    isWeakSet: isWeakSet,
+    lt: lt,
+    lte: lte,
     toArray: toArray,
+    toFinite: toFinite,
+    toInteger: toInteger,
+    toLength: toLength,
+    toNumber: toNumber,
+    assign: assign,
+    toSafeInteger: toSafeInteger,
+    add: add,
     ceil: ceil,
+    divide: divide,
+    floor: floor,
     max: max,
     maxBy: maxBy,
+    mean: mean,
+    meanBy: meanBy,
+    min: meanBy,
+    minBy: minBy,
+    multiply: multiply,
+    round: round,
+    subtract: subtract,
     sumBy: sumBy,
     sum: sum,
     clamp: clamp,
