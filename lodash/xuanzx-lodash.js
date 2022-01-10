@@ -5,6 +5,15 @@ var xuanzx = function () {
   function compact(array, size = 1) {
 
   }
+  function difference(array, size = 1) {
+
+  }
+  function differenceBy(array, size = 1) {
+
+  }
+  function differenceWith(array, size = 1) {
+
+  }
   function drop(array, size = 1) {
 
   }
@@ -24,6 +33,9 @@ var xuanzx = function () {
 
   }
   function indLastIndex(array, size = 1) {
+
+  }
+  function findLastIndex(array, size = 1) {
 
   }
   function flatten(array, size = 1) {
@@ -47,6 +59,15 @@ var xuanzx = function () {
   function initial(array, size = 1) {
 
   }
+  function intersection(array, size = 1) {
+
+  }
+  function intersectionBy(array, size = 1) {
+
+  }
+  function intersectionWith(array, size = 1) {
+    ntersectionBy
+  }
   function join(array, size = 1) {
 
   }
@@ -54,6 +75,24 @@ var xuanzx = function () {
 
   }
   function lastIndexOf(array, size = 1) {
+
+  }
+  function nth(array, size = 1) {
+
+  }
+  function pull(array, size = 1) {
+
+  }
+  function pullAll(array, size = 1) {
+
+  }
+  function pullAllBy(array, size = 1) {
+
+  }
+  function pullAllWith(array, size = 1) {
+
+  }
+  function remove(array, size = 1) {
 
   }
   function reverse(array, size = 1) {
@@ -164,7 +203,7 @@ var xuanzx = function () {
   function range(array, size = 1) {
 
   }
-  function cloneDeep(array, size = 1) {
+  function repeat(array, size = 1) {
 
   }
   return {
