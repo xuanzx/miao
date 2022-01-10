@@ -1,6 +1,19 @@
 var xuanzx = function () {
   function chunk(array, size = 1) {
-
+    if (size >= array.length) {
+      return [array.slice()]
+    }
+    let res = []
+    let len = array.length
+    for (let i = 0; i < len; i += size) {
+      let temp = []
+      let end = (i + size) <= len ? i + size : len
+      for (let j = i; j < end; j++) {
+        temp.push(array[j])
+      }
+      res.push(temp)
+    }
+    return res
   }
   function compact(array, size = 1) {
 
