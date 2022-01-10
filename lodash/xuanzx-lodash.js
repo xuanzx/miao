@@ -120,7 +120,6 @@ var xuanzx = function () {
     if (depth == 0) {
       return array.slice()
     }
-
     let res = []
     for (let i = 0; i < array.length; i++) {
       if (Array.isArray(array[i])) {
@@ -135,18 +134,44 @@ var xuanzx = function () {
     return res
   }
 
-  function fromPairs(array, size = 1) {
 
+  function fromPairs(pairs) {
+    var res = {}
+    for (var item of pairs) {
+      res[item[0]] = item[1]
+    }
+    return res
   }
-  function head(array, size = 1) {
 
-  }
-  function indexOf(array, size = 1) {
 
-  }
-  function initial(array, size = 1) {
 
+  function head(array) {
+    return array[0]
   }
+
+
+
+  function indexOf(array, value, fromIndex = 0) {
+    for (let i = fromIndex; i < array.length; i++) {
+      if (array[i] === value) {
+        return i
+      }
+    }
+    return -1
+  }
+
+
+  function initial(array) {
+    let len = array.length - 1
+    let result = []
+    for (let i = 0; i < len; i++) {
+      result.push(array[i])
+    }
+    return result
+  }
+
+
+
   function intersection(array, size = 1) {
 
   }
@@ -156,15 +181,35 @@ var xuanzx = function () {
   function intersectionWith(array, size = 1) {
 
   }
-  function join(array, size = 1) {
 
-  }
-  function last(array, size = 1) {
 
-  }
-  function lastIndexOf(array, size = 1) {
 
+  function join(array, separator = ',') {
+    let str = ''
+    for (let i = 0; i < array.length - 1; i++) {
+      str += array[i].toString() + separator
+    }
+    str += array[array.length - 1]
+    return str
   }
+
+
+
+  function last(array) {
+    return array[array.length - 1]
+  }
+
+
+  function lastIndexOf(array, val, fromIndex = array.length - 1) {
+    for (let i = fromIndex; i >= 0; i--) {
+      if (val === array[i]) {
+        return i
+      }
+    }
+    return -1
+  }
+
+
   function nth(array, size = 1) {
 
   }
