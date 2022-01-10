@@ -98,12 +98,43 @@ var xuanzx = function () {
   }
 
 
-  function flattenDeep(array, size = 1) {
-
+  function flattenDeep(array) {
+    let res = []
+    for (let i = 0; i < array.length; i++) {
+      let item = array[i]
+      if (Array.isArray(array[i])) {
+        item = flattenDeep(array[i])
+        for (let j = 0; j < item.length; j++) {
+          res.push(item[j])
+        }
+      } else {
+        res.push(item)
+      }
+    }
+    return res
   }
-  function flattenDepth(array, size = 1) {
 
+
+
+  function flattenDepth(array, depth = 1) {
+    if (depth == 0) {
+      return array.slice()
+    }
+
+    let res = []
+    for (let i = 0; i < array.length; i++) {
+      if (Array.isArray(array[i])) {
+        let item = flattenDepth(array[i], depth - 1)
+        for (let j = 0; j < item.length; j++) {
+          res.push(item[j])
+        }
+      } else {
+        res.push(array[i])
+      }
+    }
+    return res
   }
+
   function fromPairs(array, size = 1) {
 
   }
