@@ -47,8 +47,6 @@ var xuanzx = function () {
   }
 
 
-
-
   function dropRight(array, n = 1) {
     if (n >= array.length) {
       return []
@@ -213,6 +211,7 @@ var xuanzx = function () {
   function nth(array, size = 1) {
 
   }
+
   function pull(array, size = 1) {
 
   }
@@ -231,13 +230,88 @@ var xuanzx = function () {
   function reverse(array, size = 1) {
 
   }
+  function slice(array, size = 1) {
+
+  }
+  function sortedIndex(array, size = 1) {
+
+  }
+  function sortedIndexBy(array, size = 1) {
+
+  }
+  function sortedIndexOf(array, size = 1) {
+
+  }
+  function sortedLastIndex(array, size = 1) {
+
+  }
+  function sortedLastIndexBy(array, size = 1) {
+
+  }
+  function sortedLastIndexOf(array, size = 1) {
+
+  }
+  function sortedUniq(array, size = 1) {
+
+  }
+  function sortedUniqBy(array, size = 1) {
+
+  }
+  function tail(array, size = 1) {
+
+  }
+  function take(array, size = 1) {
+
+  }
+  function takeRight(array, size = 1) {
+
+  }
+  function takeRightWhile(array, size = 1) {
+
+  }
+  function takeWhile(array, size = 1) {
+
+  }
+  function union(array, size = 1) {
+
+  }
+  function unionBy(array, size = 1) {
+
+  }
+  function uniqWith(array, size = 1) {
+
+  }
   function uniq(array, size = 1) {
 
   }
   function uniqBy(array, size = 1) {
 
   }
+  function unzip(array, size = 1) {
+
+  }
+  function unzipWith(array, size = 1) {
+
+  }
   function without(array, size = 1) {
+
+  }
+  function xor(array, size = 1) {
+
+  }
+  function xorBy(array, size = 1) {
+
+  }
+  function xorWith(array, size = 1) {
+
+  }
+  function zipObject(array, size = 1) {
+
+  }
+  function zipObjectDeep(array, size = 1) {
+
+  }
+  function zipWith(array, size = 1) {
 
   }
   function zip(array, size = 1) {
@@ -342,13 +416,17 @@ var xuanzx = function () {
   return {
     chunk: chunk,
     compact: compact,
+    difference: difference,
+    differenceBy: differenceBy,
+    differenceWith: differenceWith,
     drop: drop,
     dropRight: dropRight,
     dropRightWhile: dropRightWhile,
     dropWhile: dropWhile,
     fill: fill,
     findIndex: findIndex,
-    findLastIndex: indLastIndex,
+    findLastIndex: findLastIndex,
+    indLastIndex: indLastIndex,
     flatten: flatten,
     flattenDeep: flattenDeep,
     flattenDepth: flattenDepth,
@@ -356,13 +434,48 @@ var xuanzx = function () {
     head: head,
     indexOf: indexOf,
     initial: initial,
+    intersection: intersection,
+    intersectionBy: intersectionBy,
+    intersectionWith: intersectionWith,
     join: join,
     last: last,
     lastIndexOf: lastIndexOf,
+    nth: nth,
+    pull: pull,
+    pullAll: pullAll,
+    pullAllBy: pullAllBy,
+    pullAllWith: pullAllWith,
+    remove: remove,
     reverse: reverse,
+    slice: slice,
+    sortedIndex: sortedIndex,
+    sortedIndexBy: sortedIndexBy,
+    sortedIndexOf: sortedIndexOf,
+    sortedLastIndex: sortedLastIndex,
+    sortedLastIndexBy: sortedLastIndexBy,
+    sortedLastIndexOf: sortedLastIndexOf,
+    sortedUniq: sortedUniq,
+    sortedUniqBy: sortedUniqBy,
+    tail: tail,
+    take: take,
+    takeRight: takeRight,
+    takeRightWhile: takeRightWhile,
+    takeWhile: takeWhile,
+    union: union,
+    unionBy: unionBy,
+    uniqWith: uniqWith,
     uniq: uniq,
     uniqBy: uniqBy,
+    uniqWith: uniqWith,
+    unzip: unzip,
+    unzipWith: unzipWith,
     without: without,
+    xor: xor,
+    xorBy: xorBy,
+    xorWith: xorWith,
+    zipObject: zipObject,
+    zipObjectDeep: zipObjectDeep,
+    zipWith: zipWith,
     zip: zip,
     countBy: countBy,
     every: every,
