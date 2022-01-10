@@ -1,4 +1,8 @@
 var xuanzx = function () {
+
+
+
+
   function chunk(array, size = 1) {
     if (size >= array.length) {
       return [array.slice()]
@@ -15,9 +19,19 @@ var xuanzx = function () {
     }
     return res
   }
-  function compact(array, size = 1) {
 
+
+  function compact(array) {
+    let res = []
+    for (let i = 0; i < array.length; i++) {
+      if (array[i]) {
+        res.push(array[i])
+      }
+    }
+    return res
   }
+
+
   function difference(array, size = 1) {
 
   }
@@ -27,9 +41,14 @@ var xuanzx = function () {
   function differenceWith(array, size = 1) {
 
   }
-  function drop(array, size = 1) {
 
+  function drop(array, n = 1) {
+    return array.slice(n)
   }
+
+
+
+
   function dropRight(array, size = 1) {
 
   }
@@ -216,9 +235,9 @@ var xuanzx = function () {
   function range(array, size = 1) {
 
   }
-  function cloneDeep(array, size = 1) {
 
-  }
+
+
   return {
     chunk: chunk,
     compact: compact,
