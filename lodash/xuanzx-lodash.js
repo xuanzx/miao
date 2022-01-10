@@ -49,9 +49,18 @@ var xuanzx = function () {
 
 
 
-  function dropRight(array, size = 1) {
-
+  function dropRight(array, n = 1) {
+    if (n >= array.length) {
+      return []
+    } else if (n <= 0) {
+      return array.slice()
+    }
+    return array.slice(0, array.length - n)
   }
+
+
+
+
   function dropRightWhile(array, size = 1) {
 
   }
@@ -70,9 +79,25 @@ var xuanzx = function () {
   function findLastIndex(array, size = 1) {
 
   }
-  function flatten(array, size = 1) {
 
+
+
+  function flatten(array) {
+    let res = []
+    for (let i = 0; i < array.length; i++) {
+      let item = array[i]
+      if (Array.isArray(item)) {
+        for (let every of item) {
+          res.push(every)
+        }
+      } else {
+        res.push(item)
+      }
+    }
+    return res
   }
+
+
   function flattenDeep(array, size = 1) {
 
   }
