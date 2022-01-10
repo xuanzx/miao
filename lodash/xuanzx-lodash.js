@@ -1,5 +1,228 @@
-var xuanzx = {
-  chunk: function (array, size = 1) {
+var xuanzx = function () {
+  function chunk(array, size = 1) {
 
   }
-}
+  function compact(array, size = 1) {
+
+  }
+  function drop(array, size = 1) {
+
+  }
+  function dropRight(array, size = 1) {
+
+  }
+  function dropRightWhile(array, size = 1) {
+
+  }
+  function dropWhile(array, size = 1) {
+
+  }
+  function fill(array, size = 1) {
+
+  }
+  function findIndex(array, size = 1) {
+
+  }
+  function indLastIndex(array, size = 1) {
+
+  }
+  function flatten(array, size = 1) {
+
+  }
+  function flattenDeep(array, size = 1) {
+
+  }
+  function flattenDepth(array, size = 1) {
+
+  }
+  function fromPairs(array, size = 1) {
+
+  }
+  function head(array, size = 1) {
+
+  }
+  function indexOf(array, size = 1) {
+
+  }
+  function initial(array, size = 1) {
+
+  }
+  function join(array, size = 1) {
+
+  }
+  function last(array, size = 1) {
+
+  }
+  function lastIndexOf(array, size = 1) {
+
+  }
+  function reverse(array, size = 1) {
+
+  }
+  function uniq(array, size = 1) {
+
+  }
+  function uniqBy(array, size = 1) {
+
+  }
+  function without(array, size = 1) {
+
+  }
+  function zip(array, size = 1) {
+
+  }
+  function countBy(array, size = 1) {
+
+  }
+  function every(array, size = 1) {
+
+  }
+  function filter(array, size = 1) {
+
+  }
+  function find(array, size = 1) {
+
+  }
+  function forEach(array, size = 1) {
+
+  }
+  function groupBy(array, size = 1) {
+
+  }
+  function keyBy(array, size = 1) {
+
+  }
+  function map(array, size = 1) {
+
+  }
+  function partition(array, size = 1) {
+
+  }
+  function reduce(array, size = 1) {
+
+  }
+  function reduceRight(array, size = 1) {
+
+  }
+  function reject(array, size = 1) {
+
+  }
+  function sample(array, size = 1) {
+
+  }
+  function shuffle(array, size = 1) {
+
+  }
+  function size(array, size = 1) {
+
+  }
+  function some(array, size = 1) {
+
+  }
+  function isBoolean(array, size = 1) {
+
+  }
+  function isEmpty(array, size = 1) {
+
+  }
+  function isEqual(array, size = 1) {
+
+  }
+  function isNaN(array, size = 1) {
+
+  }
+  function isNil(array, size = 1) {
+
+  }
+  function isNull(array, size = 1) {
+
+  }
+  function isNumber(array, size = 1) {
+
+  }
+  function toArray(array, size = 1) {
+
+  }
+  function ceil(array, size = 1) {
+
+  }
+  function max(array, size = 1) {
+
+  }
+  function maxBy(array, size = 1) {
+
+  }
+  function sumBy(array, size = 1) {
+
+  }
+  function sum(array, size = 1) {
+
+  }
+  function repeat(array, size = 1) {
+
+  }
+  function range(array, size = 1) {
+
+  }
+  function cloneDeep(array, size = 1) {
+
+  }
+  return {
+    chunk: chunk,
+    compact: compact,
+    drop: drop,
+    dropRight: dropRight,
+    dropRightWhile: dropRightWhile,
+    dropWhile: dropWhile,
+    fill: fill,
+    findIndex: findIndex,
+    findLastIndex: indLastIndex,
+    flatten: flatten,
+    flattenDeep: flattenDeep,
+    flattenDepth: flattenDepth,
+    fromPairs: fromPairs,
+    head: head,
+    indexOf: indexOf,
+    initial: initial,
+    join: join,
+    last: last,
+    lastIndexOf: lastIndexOf,
+    reverse: reverse,
+    uniq: uniq,
+    uniqBy: uniqBy,
+    without: without,
+    zip: zip,
+    countBy: countBy,
+    every: every,
+    filter: filter,
+    find: find,
+    forEach: forEach,
+    groupBy: groupBy,
+    keyBy: keyBy,
+    map: map,
+    partition: partition,
+    reduce: reduce,
+    reduceRight: reduceRight,
+    reject: reject,
+    sample: sample,
+    shuffle: shuffle,
+    size: size,
+    some: some,
+    isBoolean: isBoolean,
+    isEmpty: isEmpty,
+    isEqual: isEqual,
+    isNaN: isNaN,
+    isNil: isNil,
+    isNull: isNull,
+    isNumber: isNumber,
+    toArray: toArray,
+    ceil: ceil,
+    max: max,
+    maxBy: maxBy,
+    sumBy: sumBy,
+    sum: sum,
+    repeat: repeat,
+    range: range,
+    cloneDeep: cloneDeep,
+  }
+}()
