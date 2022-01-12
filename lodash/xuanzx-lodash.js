@@ -290,46 +290,57 @@ var xuanzx = function () {
   }
 
 
-  function take(array, n = 1) {
-    var res = []
-    for (var i = 0; i < array.length - n + 1; i++) {
-      res.push(array[i])
+
+  function take(ary, n = 1) {
+    if ((!Array.isArray(ary) && typeof ary != 'string') || n == 0) {
+      return []
     }
-    return res
+    if (typeof ary == 'string') {
+      ary = ary.split('')
+    }
+    if (n > ary.length) {
+      n = ary.length
+    } else if (n < 0) {
+      n = 0
+    }
+    return ary.slice(0, n)
+
+  }
+
+  function takeRight(array,) {
+
   }
 
 
-  function takeRight(array, size = 1) {
+
+  function takeRightWhile(array,) {
 
   }
-  function takeRightWhile(array, size = 1) {
+  function takeWhile(array,) {
 
   }
-  function takeWhile(array, size = 1) {
+  function union(array,) {
 
   }
-  function union(array, size = 1) {
+  function unionBy(array,) {
 
   }
-  function unionBy(array, size = 1) {
+  function unionWith(array,) {
 
   }
-  function unionWith(array, size = 1) {
+  function uniqWith(array,) {
 
   }
-  function uniqWith(array, size = 1) {
+  function uniq(array,) {
 
   }
-  function uniq(array, size = 1) {
+  function uniqBy(array,) {
 
   }
-  function uniqBy(array, size = 1) {
+  function unzip(array,) {
 
   }
-  function unzip(array, size = 1) {
-
-  }
-  function unzipWith(array, size = 1) {
+  function unzipWith(array,) {
 
   }
 
@@ -345,22 +356,22 @@ var xuanzx = function () {
   }
 
 
-  function xor(array, size = 1) {
+  function xor(array,) {
 
   }
-  function xorBy(array, size = 1) {
+  function xorBy(array,) {
 
   }
-  function xorWith(array, size = 1) {
+  function xorWith(array,) {
 
   }
-  function zipObject(array, size = 1) {
+  function zipObject(array,) {
 
   }
-  function zipObjectDeep(array, size = 1) {
+  function zipObjectDeep(array,) {
 
   }
-  function zipWith(array, size = 1) {
+  function zipWith(array,) {
 
   }
 
@@ -371,80 +382,90 @@ var xuanzx = function () {
 
 
 
-  function countBy(array, size = 1) {
-
-  }
-  function every(array, size = 1) {
-
-  }
-  function filter(array, size = 1) {
-
-  }
-  function find(array, size = 1) {
-
-  }
-  function findLast(array, size = 1) {
-
-  }
-  function flatMap(array, size = 1) {
-
-  }
-  function flatMapDeep(array, size = 1) {
-
-  }
-  function flatMapDepth(array, size = 1) {
+  function countBy(array,) {
 
   }
 
 
-  function forEach(array, size = 1) {
+  function every(ary, n = 1) {
+    for (var i = 0; i < ary.length; i++) {
+      if (!n(ary[i])) {
+        return false
+      }
+    }
+    return true
+  }
+
+
+
+  function filter(array,) {
+
+  }
+  function find(array,) {
+
+  }
+  function findLast(array,) {
+
+  }
+  function flatMap(array,) {
+
+  }
+  function flatMapDeep(array,) {
+
+  }
+  function flatMapDepth(array,) {
 
   }
 
 
-  function forEachRight(array, size = 1) {
+  function forEach(array,) {
 
   }
-  function groupBy(array, size = 1) {
+
+
+  function forEachRight(array,) {
 
   }
-  function includes(array, size = 1) {
+  function groupBy(array,) {
 
   }
-  function invokeMap(array, size = 1) {
+  function includes(array,) {
 
   }
-  function keyBy(array, size = 1) {
+  function invokeMap(array,) {
 
   }
-  function map(array, size = 1) {
+  function keyBy(array,) {
 
   }
-  function orderBy(array, size = 1) {
+  function map(array,) {
 
   }
-  function partition(array, size = 1) {
+  function orderBy(array,) {
 
   }
-  function reduce(array, size = 1) {
+  function partition(array,) {
 
   }
-  function reduceRight(array, size = 1) {
+  function reduce(array,) {
 
   }
-  function reject(array, size = 1) {
+  function reduceRight(array,) {
 
   }
-  function sample(array, size = 1) {
+  function reject(array,) {
 
   }
-  function sampleSize(array, size = 1) {
+  function sample(array,) {
 
   }
-  function shuffle(array, size = 1) {
+  function sampleSize(array,) {
 
   }
-  function size(array, size = 1) {
+  function shuffle(array,) {
+
+  }
+  function size(array,) {
 
   }
 
@@ -459,100 +480,106 @@ var xuanzx = function () {
   }
 
 
-  function sortBy(array, size = 1) {
+  function sortBy(array,) {
 
   }
-  function defer(array, size = 1) {
+  function defer(array,) {
 
   }
-  function delay(array, size = 1) {
+  function delay(array,) {
 
   }
-  function castArray(array, size = 1) {
+  function castArray(array,) {
 
   }
-  function conformsTo(array, size = 1) {
+  function conformsTo(array,) {
 
   }
-  function eq(array, size = 1) {
+  function eq(array,) {
 
   }
-  function gt(array, size = 1) {
+  function gt(array,) {
 
   }
-  function gte(array, size = 1) {
+  function gte(array,) {
 
   }
-  function isArguments(array, size = 1) {
+  function isArguments(array,) {
 
   }
-  function isArray(array, size = 1) {
+  function isArray(array,) {
 
   }
-  function isArrayBuffer(array, size = 1) {
-
-  }
-
-  function isArrayLike(array, size = 1) {
-
-  }
-  function isArrayLikeObject(array, size = 1) {
-
-  }
-  function isBoolean(array, size = 1) {
-
-  }
-  function isBoolean(array, size = 1) {
-
-  }
-  function isDate(array, size = 1) {
-
-  }
-  function isElement(array, size = 1) {
+  function isArrayBuffer(array,) {
 
   }
 
-  function isEmpty(array, size = 1) {
+  function isArrayLike(array,) {
 
   }
-  function isEqual(array, size = 1) {
-
-  }
-  function isEqualWith(array, size = 1) {
-
-  }
-  function isError(array, size = 1) {
-
-  }
-  function isFunction(array, size = 1) {
-
-  }
-  function isInteger(array, size = 1) {
-
-  }
-  function isLength(array, size = 1) {
-
-  }
-  function isMap(array, size = 1) {
-
-  }
-  function isMatch(array, size = 1) {
-
-  }
-  function isMatchWith(array, size = 1) {
-
-  }
-  function isNaN(array, size = 1) {
+  function isArrayLikeObject(array,) {
 
   }
 
-  function isNil(array, size = 1) {
+
+  function isBoolean(val) {
+    if (val === true || val === false) {
+      return true
+    } else {
+      return false
+    }
+  }
+
+
+
+  function isDate(array,) {
 
   }
-  function isNative(array, size = 1) {
+  function isElement(array,) {
 
   }
-  function isNull(array, size = 1) {
+
+  function isEmpty(array,) {
+
+  }
+  function isEqual(array,) {
+
+  }
+  function isEqualWith(array,) {
+
+  }
+  function isError(array,) {
+
+  }
+  function isFunction(array,) {
+
+  }
+  function isInteger(array,) {
+
+  }
+  function isLength(array,) {
+
+  }
+  function isMap(array,) {
+
+  }
+  function isMatch(array,) {
+
+  }
+  function isMatchWith(array,) {
+
+  }
+  function isNaN(array,) {
+
+  }
+
+  function isNil(array,) {
+
+  }
+  function isNative(array,) {
+
+  }
+  function isNull(array,) {
 
   }
 
@@ -566,82 +593,82 @@ var xuanzx = function () {
 
 
 
-  function isObject(array, size = 1) {
+  function isObject(array,) {
 
   }
-  function isObjectLike(array, size = 1) {
+  function isObjectLike(array) {
 
   }
-  function isPlainObject(array, size = 1) {
-
-  }
-
-  function isRegExp(array, size = 1) {
-
-  }
-  function isSafeInteger(array, size = 1) {
-
-  }
-  function isSet(array, size = 1) {
-
-  }
-  function isString(array, size = 1) {
-
-  }
-  function isSymbol(array, size = 1) {
-
-  }
-  function isTypedArray(array, size = 1) {
-
-  }
-  function isUndefined(array, size = 1) {
-
-  }
-  function isWeakMap(array, size = 1) {
-
-  }
-  function isWeakSet(array, size = 1) {
-
-  }
-  function lt(array, size = 1) {
-
-  }
-  function lte(array, size = 1) {
-
-  }
-  function toArray(array, size = 1) {
-
-  }
-  function toFinite(array, size = 1) {
+  function isPlainObject(array) {
 
   }
 
-  function toInteger(array, size = 1) {
+  function isRegExp(array) {
 
   }
-  function toLength(array, size = 1) {
+  function isSafeInteger(array) {
 
   }
-  function toNumber(array, size = 1) {
+  function isSet(array) {
 
   }
-  function assign(array, size = 1) {
+  function isString(array) {
 
   }
-  function toSafeInteger(array, size = 1) {
+  function isSymbol(array) {
 
   }
-  function add(array, size = 1) {
+  function isTypedArray(array) {
+
+  }
+  function isUndefined(array) {
+
+  }
+  function isWeakMap(array) {
+
+  }
+  function isWeakSet(array) {
+
+  }
+  function lt(array) {
+
+  }
+  function lte(array) {
+
+  }
+  function toArray(array) {
+
+  }
+  function toFinite(array) {
 
   }
 
-  function ceil(array, size = 1) {
+  function toInteger(array) {
 
   }
-  function divide(array, size = 1) {
+  function toLength(array) {
 
   }
-  function floor(array, size = 1) {
+  function toNumber(array) {
+
+  }
+  function assign(array) {
+
+  }
+  function toSafeInteger(array) {
+
+  }
+  function add(array) {
+
+  }
+
+  function ceil(array) {
+
+  }
+  function divide(array) {
+
+  }
+  function floor(array) {
 
   }
 
