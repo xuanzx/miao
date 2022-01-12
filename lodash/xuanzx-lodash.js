@@ -331,9 +331,19 @@ var xuanzx = function () {
   function uniqWith(array,) {
 
   }
-  function uniq(array,) {
 
+
+  function uniq(array) {
+    let result = []
+    for (let i = 0; i < array.length; i++) {
+      if (!result.includes(array[i])) {
+        result.push(array[i])
+      }
+    }
+    return result
   }
+
+
   function uniqBy(array,) {
 
   }
@@ -662,9 +672,18 @@ var xuanzx = function () {
 
   }
 
-  function ceil(array) {
 
+
+  function ceil(number, precision = 0) {
+    if (number == 0) {
+      return 0
+    }
+    precision = toInteger(precision)
+    let num1 = number * Math.pow(10, precision) | 0
+    var test = Math.pow(10, -precision)
+    return num1 * test == number ? num * test : (num1 + 1) * test
   }
+
   function divide(array) {
 
   }
