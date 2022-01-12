@@ -65,9 +65,16 @@ var xuanzx = function () {
   function dropWhile(array, size = 1) {
 
   }
-  function fill(array, size = 1) {
 
+
+  function fill(ary, value, start = 0, end = ary.length) {
+    for (let i = start; i < end; i++) {
+      ary[i] = value
+    }
+    return ary
   }
+
+
   function findIndex(array, size = 1) {
 
   }
@@ -272,12 +279,26 @@ var xuanzx = function () {
   function sortedUniqBy(array, size = 1) {
 
   }
-  function tail(array, size = 1) {
 
-  }
-  function take(array, size = 1) {
 
+  function tail(array) {
+    var res = []
+    for (var i = 1; i < array.length; i++) {
+      res.push(array[i])
+    }
+    return res
   }
+
+
+  function take(array, n = 1) {
+    var res = []
+    for (var i = 0; i < array.length - n + 1; i++) {
+      res.push(array[i])
+    }
+    return res
+  }
+
+
   function takeRight(array, size = 1) {
 
   }
