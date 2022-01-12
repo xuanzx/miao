@@ -342,9 +342,14 @@ var xuanzx = function () {
   function zipWith(array, size = 1) {
 
   }
-  function zip(array, size = 1) {
+
+
+  function zip(...args) {
 
   }
+
+
+
   function countBy(array, size = 1) {
 
   }
@@ -369,9 +374,13 @@ var xuanzx = function () {
   function flatMapDepth(array, size = 1) {
 
   }
+
+
   function forEach(array, size = 1) {
 
   }
+
+
   function forEachRight(array, size = 1) {
 
   }
@@ -417,9 +426,18 @@ var xuanzx = function () {
   function size(array, size = 1) {
 
   }
-  function some(array, size = 1) {
 
+
+  function some(array, predicate) {
+    for (var i = 0; i < array.length; i++) {
+      if (predicate(array[i])) {
+        return true
+      }
+    }
+    return false
   }
+
+
   function sortBy(array, size = 1) {
 
   }
@@ -516,9 +534,17 @@ var xuanzx = function () {
   function isNull(array, size = 1) {
 
   }
-  function isNumber(array, size = 1) {
 
+
+  function isNumber(value) {
+    if (Math.abs(value) == Infinity || value != value || isFinite(value)) {
+      return true
+    }
+    return false
   }
+
+
+
   function isObject(array, size = 1) {
 
   }
@@ -597,9 +623,19 @@ var xuanzx = function () {
   function floor(array, size = 1) {
 
   }
-  function max(array, size = 1) {
 
+
+  function max(array) {
+    var maxNum = -Infinity
+    for (var i = 0; i < array.length; i++) {
+      if (array[i] > maxNum) {
+        maxNum = array[i]
+      }
+    }
+    return maxNum
   }
+
+
   function maxBy(array, size = 1) {
 
   }
