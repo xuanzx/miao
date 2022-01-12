@@ -624,9 +624,11 @@ var xuanzx = function () {
 
   }
 
-
   function max(array) {
     var maxNum = -Infinity
+    if (array.length = 0) {
+      return undefined
+    }
     for (var i = 0; i < array.length; i++) {
       if (array[i] > maxNum) {
         maxNum = array[i]
@@ -634,6 +636,7 @@ var xuanzx = function () {
     }
     return maxNum
   }
+
 
 
   function maxBy(array, size = 1) {
