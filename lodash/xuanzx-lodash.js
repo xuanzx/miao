@@ -214,23 +214,23 @@ var xuanzx = function () {
   }
 
 
-  function nth(array, size = 1) {
+  function nth(array) {
 
   }
 
-  function pull(array, size = 1) {
+  function pull(array) {
 
   }
-  function pullAll(array, size = 1) {
+  function pullAll(array) {
 
   }
-  function pullAllBy(array, size = 1) {
+  function pullAllBy(array) {
 
   }
-  function pullAllWith(array, size = 1) {
+  function pullAllWith(array) {
 
   }
-  function remove(array, size = 1) {
+  function remove(array) {
 
   }
 
@@ -252,31 +252,31 @@ var xuanzx = function () {
 
 
 
-  function slice(array, size = 1) {
+  function slice(array) {
 
   }
-  function sortedIndex(array, size = 1) {
+  function sortedIndex(array) {
 
   }
-  function sortedIndexBy(array, size = 1) {
+  function sortedIndexBy(array) {
 
   }
-  function sortedIndexOf(array, size = 1) {
+  function sortedIndexOf(array) {
 
   }
-  function sortedLastIndex(array, size = 1) {
+  function sortedLastIndex(array) {
 
   }
-  function sortedLastIndexBy(array, size = 1) {
+  function sortedLastIndexBy(array) {
 
   }
-  function sortedLastIndexOf(array, size = 1) {
+  function sortedLastIndexOf(array) {
 
   }
-  function sortedUniq(array, size = 1) {
+  function sortedUniq(array) {
 
   }
-  function sortedUniqBy(array, size = 1) {
+  function sortedUniqBy(array) {
 
   }
 
@@ -476,9 +476,20 @@ var xuanzx = function () {
   function shuffle(array,) {
 
   }
-  function size(array,) {
 
+
+  function size(collection) {
+    if (collection && typeof collection == 'object') {
+      if (Array.isArray(collection)) {
+        return collection.length
+      }
+      return Object.keys(collection).length
+    } else if (typeof collection == 'string') {
+      return collection.length
+    }
   }
+
+
 
 
   function some(array, predicate) {
@@ -708,348 +719,356 @@ var xuanzx = function () {
 
 
 
-  function maxBy(array, size = 1) {
+  function maxBy(array) {
 
   }
-  function mean(array, size = 1) {
+  function mean(array) {
 
   }
-  function meanBy(array, size = 1) {
+  function meanBy(array) {
 
   }
 
-  function min(array, size = 1) {
+  function min(array) {
 
   }
-  function minBy(array, size = 1) {
+  function minBy(array) {
 
   }
-  function multiply(array, size = 1) {
+  function multiply(array) {
 
   }
-  function round(array, size = 1) {
+  function round(array) {
 
   }
-  function subtract(array, size = 1) {
+  function subtract(array) {
 
   }
 
 
 
-  function sumBy(array, size = 1) {
+  function sumBy(array) {
 
   }
-  function sum(array, size = 1) {
 
+
+  function sum(array) {
+    let res = 0
+    for (let i = 0; i < array.length; i++) {
+      res += array[i]
+    }
+    return res
   }
-  function clamp(array, size = 1) {
+
+
+  function clamp(array) {
 
   }
-  function inRange(array, size = 1) {
+  function inRange(array) {
 
   }
-  function random(array, size = 1) {
+  function random(array) {
 
   }
-  function assignIn(array, size = 1) {
+  function assignIn(array) {
 
   }
-  function at(array, size = 1) {
+  function at(array) {
 
   }
-  function defaults(array, size = 1) {
+  function defaults(array) {
 
   }
-  function defaultsDeep(array, size = 1) {
+  function defaultsDeep(array) {
 
   }
-  function findKey(array, size = 1) {
+  function findKey(array) {
 
   }
-  function findLastKey(array, size = 1) {
+  function findLastKey(array) {
 
   }
-  function forIn(array, size = 1) {
+  function forIn(array) {
 
   }
-  function forInRight(array, size = 1) {
+  function forInRight(array) {
 
   }
-  function forOwn(array, size = 1) {
+  function forOwn(array) {
 
   }
-  function forOwnRight(array, size = 1) {
+  function forOwnRight(array) {
 
   }
-  function functions(array, size = 1) {
+  function functions(array) {
 
   }
-  function functionsIn(array, size = 1) {
+  function functionsIn(array) {
 
   }
-  function get(array, size = 1) {
+  function get(array) {
 
   }
-  function has(array, size = 1) {
+  function has(array) {
 
   }
-  function hasIn(array, size = 1) {
+  function hasIn(array) {
 
   }
-  function invert(array, size = 1) {
+  function invert(array) {
 
   }
-  function invertBy(array, size = 1) {
+  function invertBy(array) {
 
   }
-  function invoke(array, size = 1) {
+  function invoke(array) {
 
   }
-  function keys(array, size = 1) {
+  function keys(array) {
 
   }
-  function keysIn(array, size = 1) {
+  function keysIn(array) {
 
   }
-  function mapKeys(array, size = 1) {
+  function mapKeys(array) {
 
   }
-  function mapValues(array, size = 1) {
+  function mapValues(array) {
 
   }
-  function merge(array, size = 1) {
+  function merge(array) {
 
   }
 
-  function mergeWith(array, size = 1) {
+  function mergeWith(array) {
 
   }
-  function omit(array, size = 1) {
+  function omit(array) {
 
   }
-  function omitBy(array, size = 1) {
+  function omitBy(array) {
 
   }
 
-  function pick(array, size = 1) {
+  function pick(array) {
 
   }
-  function pickBy(array, size = 1) {
+  function pickBy(array) {
 
   }
-  function result(array, size = 1) {
+  function result(array) {
 
   }
-  function set(array, size = 1) {
+  function set(array) {
 
   }
-  function setWith(array, size = 1) {
+  function setWith(array) {
 
   }
-  function toPairs(array, size = 1) {
+  function toPairs(array) {
 
   }
-  function toPairsIn(array, size = 1) {
+  function toPairsIn(array) {
 
   }
-  function transform(array, size = 1) {
+  function transform(array) {
 
   }
-  function unset(array, size = 1) {
+  function unset(array) {
 
   }
-  function update(array, size = 1) {
+  function update(array) {
 
   }
-  function updateWith(array, size = 1) {
+  function updateWith(array) {
 
   }
-  function values(array, size = 1) {
+  function values(array) {
 
   }
-  function valuesIn(array, size = 1) {
+  function valuesIn(array) {
 
   }
-  function camelCase(array, size = 1) {
+  function camelCase(array) {
 
   }
 
-  function capitalize(array, size = 1) {
+  function capitalize(array) {
 
   }
-  function deburr(array, size = 1) {
+  function deburr(array) {
 
   }
-  function endsWith(array, size = 1) {
+  function endsWith(array) {
 
   }
-  function deburr(array, size = 1) {
+  function deburr(array) {
 
   }
-  function escape(array, size = 1) {
+  function escape(array) {
 
   }
-  function escapeRegExp(array, size = 1) {
+  function escapeRegExp(array) {
 
   }
-  function kebabCase(array, size = 1) {
+  function kebabCase(array) {
 
   }
-  function lowerCase(array, size = 1) {
+  function lowerCase(array) {
 
   }
-  function pad(array, size = 1) {
+  function pad(array) {
 
   }
-  function padEnd(array, size = 1) {
+  function padEnd(array) {
 
   }
-  function padStart(array, size = 1) {
+  function padStart(array) {
 
   }
 
-  function repeat(array, size = 1) {
+  function repeat(array) {
 
   }
-  function replace(array, size = 1) {
+  function replace(array) {
 
   }
-  function snakeCase(array, size = 1) {
+  function snakeCase(array) {
 
   }
-  function split(array, size = 1) {
+  function split(array) {
 
   }
-  function startCase(array, size = 1) {
+  function startCase(array) {
 
   }
-  function startsWith(array, size = 1) {
+  function startsWith(array) {
 
   }
-  function toLower(array, size = 1) {
+  function toLower(array) {
 
   }
-  function toUpper(array, size = 1) {
+  function toUpper(array) {
 
   }
-  function trim(array, size = 1) {
+  function trim(array) {
 
   }
-  function trimEnd(array, size = 1) {
+  function trimEnd(array) {
 
   }
-  function trimStart(array, size = 1) {
+  function trimStart(array) {
 
   }
-  function truncate(array, size = 1) {
+  function truncate(array) {
 
   }
-  function unescape(array, size = 1) {
+  function unescape(array) {
 
   }
-  function upperCase(array, size = 1) {
+  function upperCase(array) {
 
   }
-  function upperFirst(array, size = 1) {
+  function upperFirst(array) {
 
   }
-  function words(array, size = 1) {
+  function words(array) {
 
   }
-  function bindAll(array, size = 1) {
+  function bindAll(array) {
 
   }
-  function defaultTo(array, size = 1) {
+  function defaultTo(array) {
 
   }
-  function range(array, size = 1) {
+  function range(array) {
 
   }
-  function rangeRight(array, size = 1) {
+  function rangeRight(array) {
 
   }
-  function mixin(array, size = 1) {
+  function mixin(array) {
 
   }
-  function times(array, size = 1) {
+  function times(array) {
 
   }
-  function toPath(array, size = 1) {
+  function toPath(array) {
 
   }
-  function uniqueId(array, size = 1) {
+  function uniqueId(array) {
 
   }
-  function cloneDeep(array, size = 1) {
+  function cloneDeep(array) {
 
   }
-  function uniqueId(array, size = 1) {
+  function uniqueId(array) {
 
   }
-  function identity(array, size = 1) {
+  function identity(array) {
 
   }
-  function concat(array, size = 1) {
+  function concat(array) {
 
   }
-  function pullAt(array, size = 1) {
+  function pullAt(array) {
 
   }
-  function matches(array, size = 1) {
+  function matches(array) {
 
   }
-  function property(array, size = 1) {
+  function property(array) {
 
   }
-  function ary(array, size = 1) {
+  function ary(array) {
 
   }
-  function unary(array, size = 1) {
+  function unary(array) {
 
   }
-  function negate(array, size = 1) {
+  function negate(array) {
 
   }
-  function once(array, size = 1) {
+  function once(array) {
 
   }
-  function spread(array, size = 1) {
+  function spread(array) {
 
   }
-  function curry(array, size = 1) {
+  function curry(array) {
 
   }
-  function memoize(array, size = 1) {
+  function memoize(array) {
 
   }
-  function flip(array, size = 1) {
+  function flip(array) {
 
   }
-  function conforms(array, size = 1) {
+  function conforms(array) {
 
   }
-  function constant(array, size = 1) {
+  function constant(array) {
 
   }
-  function flow(array, size = 1) {
+  function flow(array) {
 
   }
-  function method(array, size = 1) {
+  function method(array) {
 
   }
-  function methodOf(array, size = 1) {
+  function methodOf(array) {
 
   }
-  function nthArg(array, size = 1) {
+  function nthArg(array) {
 
   }
-  function propertyOf(array, size = 1) {
+  function propertyOf(array) {
 
   }
-  function parseJson(array, size = 1) {
+  function parseJson(array) {
 
   }
-  function stringifyJson(array, size = 1) {
+  function stringifyJson(array) {
 
   }
 
