@@ -214,9 +214,14 @@ var xuanzx = function () {
   }
 
 
-  function nth(array) {
-
+  function nth(ary, n = 0) {
+    if (n < 0) {
+      n = n + ary.length
+    }
+    return ary[n]
   }
+
+
 
   function pull(array) {
 
@@ -660,9 +665,25 @@ var xuanzx = function () {
   function lte(array) {
 
   }
-  function toArray(array) {
 
+
+  function toArray(value) {
+    let res = [],
+      type = typeof value
+    if (type === 'object') {
+      for (let j in value) {
+        res.push(value[j])
+      }
+    } else if (type === 'string') {
+      for (let i = 0; i < value.length; i++) {
+        res.push(value[i])
+      }
+    }
+    return res
   }
+
+
+
   function toFinite(array) {
 
   }
