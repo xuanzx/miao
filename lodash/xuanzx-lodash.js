@@ -933,9 +933,21 @@ var xuanzx = function () {
 
   }
 
-  function repeat(array) {
 
+
+  function repeat(str = '', n = 1) {
+    if (n <= 0) {
+      return ''
+    }
+    let res = ''
+    while (n--) {
+      res += str
+    }
+    return res
   }
+
+
+
   function replace(array) {
 
   }
@@ -1014,9 +1026,24 @@ var xuanzx = function () {
   function identity(array) {
 
   }
-  function concat(array) {
 
+
+  function concat(ary, ...val) {
+    let res = ary.slice()
+    for (let i = 0; i < val.length; i++) {
+      let item = val[i]
+      if (Array.isArray(item)) {
+        for (let j = 0; j < item.length; j++) {
+          res.push(item[j])
+        }
+      } else {
+        res.push(item)
+      }
+    }
+    return res
   }
+
+
   function pullAt(array) {
 
   }
