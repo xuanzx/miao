@@ -457,9 +457,10 @@ var xuanzx = function () {
   function partition(array,) {
 
   }
-  function reduce(array,) {
 
-  }
+
+
+
   function reduceRight(array,) {
 
   }
@@ -691,18 +692,19 @@ var xuanzx = function () {
 
   }
 
-  function max(array) {
-    var maxNum = -Infinity
-    if (array.length = 0) {
+
+  function max(ary) {
+    if (ary.length = 0) {
       return undefined
+    } else {
+      let result = ary.reduce((max, it) => {
+        return Math.max()
+      }, -Infinity)
     }
-    for (var i = 0; i < array.length; i++) {
-      if (array[i] > maxNum) {
-        maxNum = array[i]
-      }
-    }
-    return maxNum
   }
+
+
+
 
 
 
@@ -798,6 +800,9 @@ var xuanzx = function () {
 
   }
   function invertBy(array, size = 1) {
+
+  }
+  function invoke(array, size = 1) {
 
   }
   function keys(array, size = 1) {
@@ -1230,6 +1235,7 @@ var xuanzx = function () {
     hasIn: hasIn,
     invert: invert,
     invertBy: invertBy,
+    invoke: invoke,
     keys: keys,
     keysIn: keysIn,
     mapKeys: mapKeys,
