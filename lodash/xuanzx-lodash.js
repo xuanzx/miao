@@ -685,6 +685,10 @@ var xuanzx = function () {
   }
 
 
+  function add(reduce) {
+
+  }
+
 
   function ceil(number, precision = 0) {
     if (number == 0) {
