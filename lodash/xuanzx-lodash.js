@@ -459,7 +459,9 @@ var xuanzx = function () {
   }
 
 
+  function reduce(array) {
 
+  }
 
   function reduceRight(array,) {
 
