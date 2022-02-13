@@ -32,9 +32,19 @@ var xuanzx = function () {
   }
 
 
-  function difference(array, size = 1) {
-
+  function difference(ary, ...values) {
+    var result = []
+    var valuesAry = flattenDeep(values)
+    for (let i = 0; i < ary.length; i++) {
+      if (!valuesAry.includes(ary[i])) {
+        result.push(ary[i])
+      }
+    }
+    return result
   }
+
+
+
   function differenceBy(array, size = 1) {
 
   }
@@ -223,9 +233,19 @@ var xuanzx = function () {
 
 
 
-  function pull(array) {
-
+  function pull(ary, ...values) {
+    let set = new Set(values)
+    let temp = []
+    for (let i = 0; i < ary.length; i++) {
+      if (!set.has(ary[i])) {
+        temp.push(ary[i])
+      }
+    }
+    ary = temp
+    return ary
   }
+
+
   function pullAll(array) {
 
   }
@@ -681,12 +701,12 @@ var xuanzx = function () {
     }
     return res
   }
+  +
 
 
+    function toFinite(array) {
 
-  function toFinite(array) {
-
-  }
+    }
 
   function toInteger(array) {
 
