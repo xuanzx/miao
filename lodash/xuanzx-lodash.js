@@ -2,7 +2,6 @@ var xuanzx = function () {
 
 
 
-
   function chunk(array, size = 1) {
     if (size >= array.length) {
       return [array.slice()]
@@ -44,10 +43,30 @@ var xuanzx = function () {
   }
 
 
+  //   _.differenceWith(array, [values], [comparator])
+  //   这个方法类似_.difference ，除了它接受一个 comparator （注：比较器），它调用比较array，values中的元素。
+  // 结果值是从第一数组中选择。comparator 调用参数有两个：(arrVal, othVal)。
 
-  function differenceBy(array, size = 1) {
+  //   Note: 不像_.pullAllWith, 这个方法会返回一个新数组。
 
-  }
+  //   引入版本
+  //   4.0.0
+
+  //   参数
+  //   array(Array): 要检查的数组。
+  //   [values](...Array): 排除的值。
+  //   [comparator](Function): comparator 调用每个元素。
+  //   返回值
+  //     (Array): 返回一个过滤值后的新数组。
+
+  //   例子
+  //   var objects = [{ 'x': 1, 'y': 2 }, { 'x': 2, 'y': 1 }];
+
+  //   _.differenceWith(objects, [{ 'x': 1, 'y': 2 }], _.isEqual);
+  // // => [{ 'x': 2, 'y': 1 }]
+
+
+
   function differenceWith(array, size = 1) {
 
   }
@@ -704,16 +723,11 @@ var xuanzx = function () {
   +
 
 
-    function toFinite(array) {
+
+
+    function toLength(array) {
 
     }
-
-  function toInteger(array) {
-
-  }
-  function toLength(array) {
-
-  }
   function toNumber(array) {
 
   }
@@ -733,15 +747,15 @@ var xuanzx = function () {
   }
 
 
-  function ceil(number, precision = 0) {
-    if (number == 0) {
-      return 0
-    }
-    precision = toInteger(precision)
-    let num1 = number * Math.pow(10, precision) | 0
-    var test = Math.pow(10, -precision)
-    return num1 * test == number ? num * test : (num1 + 1) * test
-  }
+  // function ceil(number, precision = 0) {
+  //   if (number == 0) {
+  //     return 0
+  //   }
+  //   precision = toInteger(precision)
+  //   let num1 = number * Math.pow(10, precision) | 0
+  //   var test = Math.pow(10, -precision)
+  //   return num1 * test == number ? num * test : (num1 + 1) * test
+  // }
 
   function divide(array) {
 
@@ -1094,12 +1108,34 @@ var xuanzx = function () {
   function property(array) {
 
   }
-  function ary(array) {
 
+  // 只传前n个参数
+  function ary(func, n = func.length) {
+    return function (...args) {
+      return func(...arg.slice(0, n))
+    }
   }
-  function unary(array) {
 
+  // 将this也传给原函数
+  function ary(func, n = func.length) {
+    return function (...args) {
+      return func.call(this, ...arg.slice(0, n))
+    }
   }
+
+  // 只传第一个参数，不能只写val，因为有没传值的情况，写args就算没传参，slice还是空的
+  function unary(func) {
+    return function (...args) {
+      return func(...args.slice(0, 1))
+    }
+  }
+
+  // 第二种写法
+  function unary(func) {
+    return ary(func, 1)
+  }
+
+
   function negate(array) {
 
   }
@@ -1112,12 +1148,44 @@ var xuanzx = function () {
   function curry(array) {
 
   }
-  function memoize(array) {
 
-  }
-  function flip(array) {
 
+  // 只传一个参数的情况
+  function memoize(func) {
+    var map = new Map()
+    return function (val) {
+      if (map.has(val)) {
+        return map.get(val)
+      }
+      var result = func(val)
+      map.set(val, result)
+      return result
+    }
   }
+
+  // 传多个参数的情况
+  function memoize(func, resolver = it => it) {
+    var map = new Map()
+    return function (...args) {
+      var key = resolver(...args)
+      if (map.has(key)) {
+        return map.get(key)
+      }
+      var result = func(...args)
+      map.set(key, result)
+      return result
+    }
+  }
+
+
+  // 把参数倒过来传
+  function flip(func) {
+    return function (...arg) {
+      return func(...args.reverse())
+    }
+  }
+
+
   function conforms(array) {
 
   }
@@ -1287,8 +1355,6 @@ var xuanzx = function () {
     lt: lt,
     lte: lte,
     toArray: toArray,
-    toFinite: toFinite,
-    toInteger: toInteger,
     toLength: toLength,
     toNumber: toNumber,
     assign: assign,
